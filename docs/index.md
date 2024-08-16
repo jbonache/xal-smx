@@ -11,7 +11,7 @@ title: Informació del mòdul
 - 1r Sistemes Microinformàtics i en Xarxa (**SMX**)
 - IES Jaume II el Just
 - Tavernes de la Valldigna
-- [AULES](https://aules.edu.gva.es/fp/course/view.php?id=xxxxxx)
+- [AULES](https://aules.edu.gva.es/fp/course/view.php?id=XXXXXX)
 
 ## :material-bookshelf: Continguts
 
