@@ -1,0 +1,92 @@
+site_name: Xarxes Area Local
+site_author: José A. Sánchez
+site_url: https://jbonache.github.io/xal-smx
+theme:
+  name: material
+  logo: img/logojaume.png
+  favicon: img/logojaume.png
+  language: ca
+  features:
+#    - navigation.tabs
+#    - navigation.tabs.sticky
+    - navigation.top # Botó de "Back to top"
+    - navigation.footer
+    - toc.follow
+    - content.code.copy
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Mode oscur
+        primary: teal
+        accent: purple
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Mode clar
+        primary: teal
+        accent: lime
+
+extra:
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:ja.sanchezbonache@edu.gva.es
+      name: Contacte
+  analytics:
+    provider: google
+    property: G-GJ8MB56SLW
+  consent:
+    title: Consentiment de Cookies
+    description: Utilitzem cookies per reconèixer les vostres visites i preferències repetides, així com per mesurar l'eficàcia de la nostra documentació i si els usuaris troben el que estan cercant. Amb el vostre consentiment, ens esteu ajudant a millorar la nostra documentació.
+
+copyright: Apunts XAL - 1SMX (origin by P.Galera) es troba sota llicència CC BY-NC-SA 4.0 - <a href="#__consent">Canvia la configuració de les cookies</a>
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+      auto_title: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  
+
+nav:
+  - P. Didàctica: SMX1-XAL-PRG.md
+  - Unitat 1:
+    - Teoria UD1: SMX1-XAL-1.md
+    - Activitats UD1: SMX1-XAL-1-Act.md
+  - Unitat 2: SMX1-XAL-2.md
+  - Unitat 3: SMX1-XAL-3.md
+  - Unitat 4: SMX1-XAL-4.md
+  - Unitat 5: SMX1-XAL-5.md
+  - Unitat 6: SMX1-XAL-6.md
+
+plugins:
+  - search
+  - social
+  - with-pdf:
+      #author: WHO
+      copyright: Apunts XAL - 1SMX (origin by P.Galera) es troba sota llicència CC BY-NC-SA 4.0
+      back_cover: true
+      #cover_title: TITLE TEXT
+      cover_subtitle: 1r SMX - IES Jaume II el Just - Tavernes de la Valldigna
+      cover_logo: img/logojaumetema.png
+      toc_title: Continguts
+      #heading_shift: false
+      toc_level: 3
+      #ordered_chapter_level: 2
+      exclude_pages:
+          - 'SMX1-XAL-PRG'
