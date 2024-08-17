@@ -1,0 +1,1743 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="José A. Sánchez">
+      
+      
+        <link rel="canonical" href="https://jbonache.github.io/xal-smx/SMX1-XAL-5/">
+      
+      
+        <link rel="prev" href="../SMX1-XAL-4/">
+      
+      
+        <link rel="next" href="../SMX1-XAL-6/">
+      
+      
+      <link rel="icon" href="../img/logojaume.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>UD5. Instal·lació i configuració d'equips de xarxa - Xarxes Area Local</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-GJ8MB56SLW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-GJ8MB56SLW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-GJ8MB56SLW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="UD5. Instal·lació i configuració d'equips de xarxa - Xarxes Area Local" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-5.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://jbonache.github.io/xal-smx/SMX1-XAL-5/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="UD5. Instal·lació i configuració d'equips de xarxa - Xarxes Area Local" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-5.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ud5-installacio-i-configuracio-dequips-de-xarxa" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href=".." title="Xarxes Area Local" class="md-header__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xarxes Area Local
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD5. Instal·lació i configuració d'equips de xarxa
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode oscur"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode oscur" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode clar"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clar" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Xarxes Area Local" class="md-nav__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    Xarxes Area Local
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-PRG/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P. Didàctica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Unitat 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Unitat 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teoria UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1-Act/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitats UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unitat 5
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 5
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-sistema-operatiu-en-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      El sistema operatiu en xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El sistema operatiu en xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components del sistema
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#families-de-protocols-en-microsoft" class="md-nav__link">
+    <span class="md-ellipsis">
+      Families de protocols en Microsoft
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#familia-de-protocols-tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Familia de protocols TCP/IP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Familia de protocols TCP/IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protocol-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol IP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Protocol IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conversio-de-sistema-decimal-a-sistema-binari" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversió de sistema decimal a sistema binari
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversio-de-sistema-binari-a-sistema-decimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversió de sistema binari a sistema decimal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parts-de-ladreca-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parts de l'adreça IP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parts de l'adreça IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mascara-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Máscara de xarxa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adreca-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreça de xarxa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol TCP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adrecament-ip-classful" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreçament IP (Classful)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adreçament IP (Classful)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classes-de-una-adreca-ip-classe-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes de una adreça IP: classe A
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-de-una-adreca-ip-classe-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes de una adreça IP: classe B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-de-una-adreca-ip-classe-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes de una adreça IP: classe C
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-de-una-adreca-ip-classe-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes de una adreça IP: classe D
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-de-una-adreca-ip-classe-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes de una adreça IP: classe E
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adreces-publiques-i-privades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreces públiques i privades
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adreces públiques i privades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adreces-ip-privades-reservades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreces IP privades reservades
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adreces-ip-estatiques-i-dinamiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreces IP estàtiques i dinàmiques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adreces-ip-especials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreces IP especials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calcul-de-ladreca-de-broadcast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Càlcul de l'adreça de broadcast
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adrecament-classful" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreçament Classful
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adreçament Classful">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subnetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subnetting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adrecament-classless" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreçament Classless
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-sistema-operatiu-en-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      El sistema operatiu en xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El sistema operatiu en xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components del sistema
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#families-de-protocols-en-microsoft" class="md-nav__link">
+    <span class="md-ellipsis">
+      Families de protocols en Microsoft
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#familia-de-protocols-tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Familia de protocols TCP/IP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Familia de protocols TCP/IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protocol-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol IP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Protocol IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conversio-de-sistema-decimal-a-sistema-binari" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversió de sistema decimal a sistema binari
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversio-de-sistema-binari-a-sistema-decimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversió de sistema binari a sistema decimal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parts-de-ladreca-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parts de l'adreça IP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parts de l'adreça IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mascara-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Máscara de xarxa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adreca-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreça de xarxa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol TCP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adrecament-ip-classful" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreçament IP (Classful)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adreçament IP (Classful)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classes-de-una-adreca-ip-classe-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes de una adreça IP: classe A
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-de-una-adreca-ip-classe-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes de una adreça IP: classe B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-de-una-adreca-ip-classe-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes de una adreça IP: classe C
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-de-una-adreca-ip-classe-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes de una adreça IP: classe D
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-de-una-adreca-ip-classe-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes de una adreça IP: classe E
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adreces-publiques-i-privades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreces públiques i privades
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adreces públiques i privades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adreces-ip-privades-reservades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreces IP privades reservades
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adreces-ip-estatiques-i-dinamiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreces IP estàtiques i dinàmiques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adreces-ip-especials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreces IP especials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calcul-de-ladreca-de-broadcast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Càlcul de l'adreça de broadcast
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adrecament-classful" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreçament Classful
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adreçament Classful">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subnetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subnetting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adrecament-classless" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreçament Classless
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ud5-installacio-i-configuracio-dequips-de-xarxa">UD5. Instal·lació i configuració d'equips de xarxa</h1>
+<h2 id="el-sistema-operatiu-en-xarxa">El sistema operatiu en xarxa</h2>
+<p>La xarxa està formada per nodes i gran <strong>part de la funcionalitat d'una xarxa depen del software de xarxa que està instal·lat als seus nodes</strong>.</p>
+<p>Al mateix temps, cadascun d'aquests nodes <strong>pot tenir corrent un sistema operatiu distint</strong>.</p>
+<p>El sistema operatiu de <strong>cada node pot tenir instal·lats i configurats protocols de xarxa distints</strong>. Son aquests protocols de xarxa els qui seran capaços d'entendre i processar la informació que reba altre node.</p>
+<p>Actualment tots els sistemes operatius empren el protocol TCP/IP, el que facilita la interconnexió.</p>
+<ul>
+<li><strong>Microsoft Windows</strong>: tenia com a protocol de xarxa natiu <strong><em>NetBeui</em></strong> i era accessible a través de NetBIOS. Conserva aquesta interfície per compatibilitat, però el <strong>protocol natiu actual é1 Bytes TCP/IP</strong>.</li>
+<li><strong>UNIX i distribucions GNU/Linux</strong>: GNU/Linux engloba a tots els sistemes operatius que seguisquen la tecnologia UNIX, però que es distribueixen sota llicència GP (GNU Public License). La tecnologia de <strong>xarxa nativa</strong> de Linux és <strong>TCP/IP</strong>, però per compatibilitat incorpora software amb les piles de protocols de <strong>Microsoft y Novell Netware</strong>.</li>
+<li><strong>Apple Mac OS X</strong>: Antigament emprava la pila de protocols <strong><em>AppleTalk</em></strong>, però actualment el seu <strong>protocol de xarxa natiu és TCP/IP</strong>.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Documentació</p>
+<p>Hem de conservar sempre una <strong>documentació bàsica del software</strong> que opera a la xarxa. Hi ha que <strong>identificar els sistemes operatius de cada ordenador connectat a la xarxa (clients i servidors)</strong>. La identificació ha de tenir la <strong>versió del sistema, l'idioma, els parxes</strong> que tinga instal·lats.</p>
+<p>Per exemple:</p>
+<ul>
+<li>Linux amb Ubuntu versió 23.04</li>
+<li>Windows 10 SP2</li>
+</ul>
+</div>
+<h3 id="components-del-sistema">Components del sistema</h3>
+<p>Un sistema operatiu és molt complexe i per a realitzar les seues funcions relacionades amb la cimunicació en xarxa necessita recolzar-se en:</p>
+<ul>
+<li><strong>Controladors (drivers) de l'adaptador de xarxa</strong>: Software que comunica el <em>hardware</em> de la targeta de xarxa amb el sistema operatiu. Si no tenim el controlador adequat es poden produir errors que impedeixen l'arranc del sistema o el deixen en una situación irrecuperable.</li>
+<li><strong>Serveis en Xarxa</strong>: Un servei en un SO és una <strong>tasca que s'executa en segon plà (background) proporcionant una utilitat</strong> determinada als clients que realitzen peticions a l'esmentat servei. En Linux, aquestes tasques s'anomenen <strong>dimonis</strong>. Un servei de xarxa és aquella tasca a la que s'accedeix mitjançant un <strong><em>socket</em></strong> (protocol + port) i rep peticions a través de la xarxa. Per exemple, el <strong>servei d'accés a fitxers en xarxa</strong> o el <strong>servei d'impressió en xarxa</strong>.</li>
+<li><strong>Piles de protocols</strong>: Son les families de protocols que instalem en els Sistemes Operatius. Per exemple: TCP/IP, SPX/IPX, NetBeui i AppleTalk. De vegades s'instalen amb el software del SO i altres vegades és necessari que instalem altres piles de protocols o serveis de xarxa. </li>
+</ul>
+<h2 id="families-de-protocols-en-microsoft">Families de protocols en Microsoft</h2>
+<ul>
+<li>
+<p><strong>Protocol NetBEUI</strong>: sols pot emprar-se en xarxes locals perquè no és capaç d'encaminar-se per a dirigir-se a altres xarxes. Si la xarxa és xicoteta i no es pensa en un creixement a curt termini es podria emprar per donar suport per ser molt simple i fàcil d'emprar. De totes formes, es recomana TCP/IP.</p>
+</li>
+<li>
+<p><strong>Protocol IPX/SPX</strong>: protocol contruit per <em>Novell</em> per al seu sistema <em>NetWare</em>. Permet oferir un servei bàsic d'encaminament a xarxes xicotetes i mitjanes. Recomanable quan les estacions de treball de Microsoft han de conviure amb servidors NetWare.</p>
+</li>
+<li>
+<p><strong>Protocol TCP/IP</strong>: especialment dissenyat per poder encaminar-se entre distintes xarxes d'àrea local. Recomanable si la xarxa d'àrea local ha d'estar connectada a Internet o deu estar molt seggmentada.</p>
+</li>
+</ul>
+<h2 id="familia-de-protocols-tcpip">Familia de protocols TCP/IP</h2>
+<p>El model TCP/IP és un model <strong>més pràctic</strong> que el model OSI. Primerament es dissenyaren els protocols y després s'integraren per capes en l'arquitectura.</p>
+<p>El model TCP/IP és molt <strong>més simple</strong>, doncs redueix les capes de 7 a 4.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Arquitectura OSI</th>
+<th style="text-align: center;">Arquitectura TCP/IP</th>
+<th style="text-align: center;">Funció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Aplicació</td>
+<td style="text-align: center;">Aplicació</td>
+<td style="text-align: center;">Conté protocols utilitzats per a les comunicacions de procés a procés, com HTTP, FTP, SMTP, etc.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Presentació</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Proporciona una representació comuna de les dades transferides entre els serveis de la capa d'aplicació, com la codificació, el xifratge i la compressió.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Sessió</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Gestiona l'establiment, el manteniment i la finalització de les sessions entre els processos d'aplicació.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Transport</td>
+<td style="text-align: center;">Transport</td>
+<td style="text-align: center;">Proporciona serveis de comunicació fiables i no fiables entre els hosts, com TCP i UDP.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Xarxa</td>
+<td style="text-align: center;">Internet</td>
+<td style="text-align: center;">S'encarrega de l'enrutament dels paquets a través de la xarxa, utilitzant protocols com IP, ICMP i ARP.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Enllaç de dades</td>
+<td style="text-align: center;">Host-xarxa</td>
+<td style="text-align: center;">S'encarrega de la transmissió de les dades entre els dispositius de la xarxa, utilitzant protocols com Ethernet, Wi-Fi i PPP.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Física</td>
+<td style="text-align: center;">Host-xarxa</td>
+<td style="text-align: center;">S'encarrega de la conversió de les dades en senyals elèctrics, òptics o sense fils que es poden transmetre pel medi físic.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="protocol-ip">Protocol IP</h3>
+<ul>
+<li>El protocol IP realitza tasques bàsiques d'encaminament per a conseguir transportar dades desde un orige a un destí.</li>
+<li>L'<strong>orige i el destí poden estar en xarxes amb tecnologies totalment diferents</strong> i pot haver-hi diverses rutes possibles per el que deurà pendre decisions i triar la millor.</li>
+<li><strong>No hi ha seguretat a l'entrega</strong>.</li>
+<li><strong>No hi ha control d'errors</strong>.</li>
+<li><strong>Els paquets poden arribar desordenats</strong>.</li>
+<li>Els equips d'una xarxa tenen asociat u nnúmero d'<strong>adreça IP</strong> (adreça lògica, no confondre amb el número MAC de l'adaptador de xarxa que és l'adreça física) que permet identificar-los en tot Internet.</li>
+<li>L'<strong>adreça IP és un número binari de 32 bits</strong>. La seua representació en decimal està formada per 4 números separats per punts, cadascún dels quals pot pendre valors entre 0 i 255.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Adreça IP binària de 32 bits</p>
+<p>11000000 . 10101000 . 00100010 . 00001011 = 192.168.100.15</p>
+</div>
+<h4 id="conversio-de-sistema-decimal-a-sistema-binari">Conversió de sistema decimal a sistema binari</h4>
+<p>Per convertir un número decimal en binari es realitzen successives divisions entre 2 (base del sistema) i van recollint-se els residus de cada divisió <strong>en ordre invers</strong>.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple de pas de decimal a binari</p>
+<p><center><img alt="Decimal a Binari" src="../img/decBin/decabin.png" width="75%" /></center></p>
+</div>
+<h4 id="conversio-de-sistema-binari-a-sistema-decimal">Conversió de sistema binari a sistema decimal</h4>
+<p>Per tal de convertir un número binari a decimal haurem d'aplicar el <strong>Teorema fonamental de la numeració</strong>.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple de pas de binari a decimal</p>
+<p><center><img alt="Binari a Decimal" src="../img/decBin/binadec.png" width="75%" /></center></p>
+</div>
+<h4 id="parts-de-ladreca-ip">Parts de l'adreça IP</h4>
+<ul>
+<li>
+<p>L'adreça IP d'un dispositiu està <strong>estructurada en dues parts</strong>:</p>
+<ul>
+<li><strong>Identificador de xarxa</strong> a la que està connectat el dispositiu</li>
+<li><strong>Identificador del dispositiu</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Aquesta estructura facilita l'encaminament dels routers</strong>, de forma que per encaminar un datagrama, els routers analitzaran l'dentificador de xarxa al qual pertany i ho encaminaran cap a ella. Una vegada dintre de la xarxa, el o els routers de dita xarxa tindran que analitzar l'indicador del host de destí per encaminar el datagrama fins ell.</p>
+</li>
+<li>
+<p>L'dentificador de xarxa pot tenir el tamany que es desitge, en funció del tamany de la xarxa.</p>
+</li>
+</ul>
+<p><center><img alt="Parts d'una IP" src="../img/ips/partsIP.png" width="75%" /></center></p>
+<h5 id="mascara-de-xarxa">Máscara de xarxa</h5>
+<p>És un número similar a l'adreça IP i <strong>determina quina part de l'adreça IP pertany a l'equip i quina part pertany a la xarxa</strong>. Per definir el prefixe de l'adreça IP, és a dir, el que es coneix com identificador de xarxa, s'utilitza la denominada máscara de xarxa, que és un número binari de 32 bits que defineix a les posicions a "1" el prefixe o identificador de xarxa i a les posicions a "0" el dufixe o identificador de host.</p>
+<ul>
+<li>Actualment per tal d'identificar la máscara de cada PC se li afig <em>/XX</em> a l'adreça IP. Éssent <em>XX</em> el nombre de bits a "1" de la máscara de xarxa.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">La "màscara curta"</p>
+<ul>
+<li>IP = 192.168.2.200 -- Màscara: 255.255.255.0</li>
+<li>Nomenclatura equivalent: IP = 192.168.2.200/24</li>
+</ul>
+</div>
+<h5 id="adreca-de-xarxa">Adreça de xarxa</h5>
+<p>L’adreça de la xarxa és la part de l’adreça IP que identifica la subxarxa on es troba el dispositiu. Com ja hem vist, la màscara de xarxa és un nombre que indica quants bits de l’adreça IP pertanyen a la xarxa i quants al host.</p>
+<p>Per calcular l’adreça de la xarxa, hem de fer una operació <strong>AND lògica</strong> entre l’adreça IP i la màscara de subxarxa. Això significa que si els dos bits són 1, el resultat és 1; si no, el resultat és 0.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple de càlcul d'adreça de xarxa</p>
+<p>Suposem que tenim l’adreça IP <strong><em>192.168.1.100</em></strong> i la màscara de subxarxa <strong><em>255.255.255.0</em></strong>. En binari, això seria:</p>
+<p>IP:   11000000.10101000.00000001.01100100</p>
+<p>Mask: 11111111.11111111.11111111.00000000</p>
+<p>Fent l’operació AND entre els dos, obtenim:</p>
+<p>Adreça de xarxa:  11000000.10101000.00000001.00000000</p>
+<p>Aquest és el resultat en binari de l’adreça de la xarxa. Si el convertim a decimal, obtenim:</p>
+<p>Adreça de xarxa:  192.168.1.0</p>
+</div>
+<h3 id="protocol-tcp">Protocol TCP</h3>
+<ul>
+<li>El TCP és un protocol per al control de la transmissió de les dades.</li>
+<li>Es dissenyà per realitzar connexions segures en xarxes insegures.</li>
+<li>Soluciona els problemes existents en IP:<ul>
+<li><strong>Aporta control d'errors</strong>.</li>
+<li><strong>Seguretat a l'entrega</strong>.</li>
+<li><strong>Control de fluxe. Els paquest arriben ordenats</strong>.</li>
+</ul>
+</li>
+<li>Es complementa de manera perfecta amb IP per <strong>aportar una comunicació de dades fiable i ordenada</strong>. Per això en ocasions es fa referència a TCP/IP com si fos un únic protocol, però realment en son dos.</li>
+<li>Els punts d'accés al servei en la capa de transport s'anomenen <strong><em>sockets, ports o connectors TCP/IP</em></strong>. Darrere de cada <em>socket</em> s'implanta un servei de xarxa. Per exemple, 80 és el port que identifica les peticions de xarxa cap a un servidor web.</li>
+<li>Quan algú a la xarxa requereix un servei, envia un missatge al <em>socket</em> o port que identifica el servei. Alguns serveis requereixen més d'un <em>socket</em> per al seu funcionament.</li>
+</ul>
+<h2 id="adrecament-ip-classful">Adreçament IP (Classful)</h2>
+<p>Per tal de facilitar la administració, els dissenyadors de l'esquema d'adreçament IP vàren determinar l'existència de 5 classes úniques: A, B, C, D i E.</p>
+<p><center><img alt="Classes d'IP" src="../img/ips/classesIP.png" width="100%" /></center></p>
+<h3 id="classes-de-una-adreca-ip-classe-a">Classes de una adreça IP: classe A</h3>
+<ul>
+<li>
+<p>Una <strong>adreça IP de classe A</strong> sempre té el primer bit (el que es troba més a l'esquerra) a '0', és a dir, <strong>el primer octet té un valor decimal entre 0 i 126</strong>. La xarxa 127.0.0.0 no pot emprar-se per estar reservada per a proves de l'adaptador de xarxa.</p>
+</li>
+<li>
+<p>Les adreces IP de classe A empren solament els <strong>8 primers bits per identificar la part de xarxa</strong> de l'adreça, la resta <strong><em>(tres octets) s'utilitzen per especificar la part del host</em></strong> de l'adreça.</p>
+</li>
+<li>
+<p>Les <strong><em>adreces IP de classe A que NO es poden utilitzar</em></strong> son:</p>
+<ul>
+<li>Una <strong>primera adreça IP per a l'identificador de la xarxa</strong> (primer octet amb el valor de la xarxa corresponent i la resta d'octets amb els seus bits a valor zero).</li>
+<li>Una <strong>adreça IP per a difussió o <em>broadcast</em></strong>, que tindrà el primer octet amb el valor de la xarxa i la resta d'octets amb els bits a valor 1, és a doir 255 en decimal.</li>
+</ul>
+</li>
+<li>
+<p>La <strong>máscara de xarxa per defecte</strong> de les adreces IP de classe A son <strong>255.0.0.0</strong></p>
+</li>
+</ul>
+<h3 id="classes-de-una-adreca-ip-classe-b">Classes de una adreça IP: classe B</h3>
+<ul>
+<li>
+<p>Una <strong>adreça IP de classe B</strong> sempre té els seus dos primers bits a valor binari '10', és a dir, <strong>el primer octet tindrà un valor decimal entre 128 i 191</strong>.</p>
+</li>
+<li>
+<p>La <strong>máscara de xarxa per defecte</strong> de les adreces IP de classe B son <strong>255.255.0.0</strong></p>
+</li>
+<li>
+<p>Les adreces de classe B utilitzen els <strong>dos primers octets per a l'identificador de xarxa</strong>, i els <strong>dos últims octets per a l'identificador de host</strong>. En una xarxa de classe B existiran 65.536 IPs distintes, de les quals dues estan reservades per a la xarxa (bits de host TOTS a zero) i per al <em>broadcast</em> (bits de host TOTS a uns). Per tant, 65534 nombre màxima de connexions.</p>
+</li>
+</ul>
+<h3 id="classes-de-una-adreca-ip-classe-c">Classes de una adreça IP: classe C</h3>
+<ul>
+<li>
+<p>Una adreça de classe C sempre té els seus tres primers bits al valor binari '110', és a dir, <strong>el primer octet tindrà un valor decimal entre 192 i 223</strong>.</p>
+</li>
+<li>
+<p>La <strong>màscara de xarxa per defecte</strong> de les adreces IP de classe C és <strong>255.255.255.0</strong></p>
+</li>
+<li>
+<p>Les adreces de classe C utilitzen els <strong>tres primers octets per a l'identificador de xarxa</strong> i l'<strong>últim octet per a l'identificador de host</strong>. En una xarxa classe C existiran un màxim de 256 IPs distintes, de les quals dues estan reservades (xarxa i <em>broadcast</em>), per tant tindre 254 connexions reals.</p>
+</li>
+</ul>
+<h3 id="classes-de-una-adreca-ip-classe-d">Classes de una adreça IP: classe D</h3>
+<ul>
+<li>Les adreces IP de classe D son adreces <strong>multicast o multienviament</strong> que s'utilitzen únicament <strong>el primer octet com identificatiu de xarxa</strong> i els <strong>tres octets restants</strong> s'utilitzen com <strong>identificatiu de grup de host</strong>.</li>
+</ul>
+<h3 id="classes-de-una-adreca-ip-classe-e">Classes de una adreça IP: classe E</h3>
+<ul>
+<li>Les adreces Ip de classe E estan reservades per a ús experimental en projectes d'investigació en la xarxa. S'utilitzen únicament per a futurs projectes i experimentacions.</li>
+</ul>
+<h2 id="adreces-publiques-i-privades">Adreces públiques i privades</h2>
+<p>Una <strong>adreça IP pública</strong> és aquella que <strong>identifica de forma única una connexió a Internet</strong>.</p>
+<p>Les <strong>adreces IP privades</strong> son adreces IP que s'utilitzen única i exclusivament en <strong>xarxes d'àrea local perquè no poden ixir a navegar per Internet</strong>, de fet, si un datagrama d'una xarxa privada ixquera accidentalment a Internet seria descartat perquè eixa adreça no existeix en Internet.</p>
+<p>Quan des d'una <strong>xarxa local s'ix a navegar per Internet</strong> haurem d'emprar un <strong>router amb tecnologia NAT</strong> (Network Address Translation). De forma resumida, el NAT farà que siga el router l'encarregar d'emmagatzemar l'adreça privada en una taula, asignar-li un identificador i substituir l'adreça d'orige per la pública del router. Quan se li conteste no tindrà més que consultar en la seua taula el valor de l'adreça provada corresponent a l'identificador i enviar-li a ella el datagrama de resposta.</p>
+<h3 id="adreces-ip-privades-reservades">Adreces IP privades reservades</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>TIPUS IP</strong></th>
+<th style="text-align: center;"><strong>Des de...</strong></th>
+<th style="text-align: center;"><strong>Fins a...</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">10.0.0.0</td>
+<td style="text-align: center;">10.255.255.255</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">172.16.0.0</td>
+<td style="text-align: center;">172.31.255.255</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">192.168.0.0</td>
+<td style="text-align: center;">192.168.255.255</td>
+</tr>
+</tbody>
+</table>
+<h2 id="adreces-ip-estatiques-i-dinamiques">Adreces IP estàtiques i dinàmiques</h2>
+<ul>
+<li>
+<p><strong>ESTÀTIQUES (fixes)</strong>: Un host que es connecte a la xarxa amb una adreça IP estàtica, sempre ho farà amb la mateixa IP. Les adreces IP públiques estàtiques son les que utilitzen els servidors d'Internet amb l'objectiu d'estar sempre localitzables per els usuaris d'Internet. Aquestes adreces hi ha que contractar-les.</p>
+</li>
+<li>
+<p><strong>DINÀMIQUES</strong>: Un equip que es connecte a la xarxa mitjançant una adreça IP dinàmica, cada vegada ho farà amb una IP distinta. Els proveïdors d'Internet (ISP) empren adreces IP dinàmiques perquè tenen més clients que adreces IP (és molt improbable que tots es connecten al mateix temps).</p>
+</li>
+<li>
+<p>Les adreces IP emprades en Internet estan definides en la <strong><em>RFC1166</em></strong>.</p>
+</li>
+</ul>
+<h2 id="adreces-ip-especials">Adreces IP especials</h2>
+<p>Aquestes adreces són especials i no es poden passar fora de la xarxa local o tenen un ús específic:</p>
+<table>
+<thead>
+<tr>
+<th>Bloc d'adreces</th>
+<th>Rang</th>
+<th>Número d'adreces</th>
+<th>Abast</th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0.0.0/8</td>
+<td>0.0.0.0–0.255.255.255</td>
+<td>16.777.216</td>
+<td>Software</td>
+<td>Xarxa actual (només vàlid com a adreça d'origen).</td>
+</tr>
+<tr>
+<td>10.0.0.0/8</td>
+<td>10.0.0.0–10.255.255.255</td>
+<td>16.777.216</td>
+<td>Xarxa privada</td>
+<td>Utilitzat per a les comunicacions locals dins d'una xarxa privada.</td>
+</tr>
+<tr>
+<td>100.64.0.0/10</td>
+<td>100.64.0.0–100.127.255.255</td>
+<td>4.194.304</td>
+<td>Xarxa privada</td>
+<td>Espai d'adreces compartit per a les comunicacions entre un proveïdor de serveis i els seus subscriptors quan s'utilitza un NAT de nivell d'operador.</td>
+</tr>
+<tr>
+<td>127.0.0.0/8</td>
+<td>127.0.0.0–127.255.255.255</td>
+<td>16.777.216</td>
+<td>Host</td>
+<td>S'utilitza per a les adreces de loopback.</td>
+</tr>
+<tr>
+<td>169.254.0.0/16</td>
+<td>169.254.0.0–169.254.255.255</td>
+<td>65.536</td>
+<td>Subxarxa</td>
+<td>S'utilitza per a les adreces de enllaç local entre dos hosts en un sol enllaç quan d'altra manera no s'especifica cap adreça IP, com normalment s'hauria recuperat d'un servidor DHCP.</td>
+</tr>
+<tr>
+<td>172.16.0.0/12</td>
+<td>172.16.0.0–172.31.255.255</td>
+<td>1.048.576</td>
+<td>Xarxa privada</td>
+<td>Utilitzat per a les comunicacions locals dins d'una xarxa privada.</td>
+</tr>
+<tr>
+<td>192.0.0.0/24</td>
+<td>192.0.0.0–192.0.0.255</td>
+<td>256</td>
+<td>Xarxa privada</td>
+<td>Assignacions de protocol de l'IETF.</td>
+</tr>
+<tr>
+<td>192.0.2.0/24</td>
+<td>192.0.2.0–192.0.2.255</td>
+<td>256</td>
+<td>Documentació</td>
+<td>Assignat com a TEST-NET-1, per a documentació i exemples.</td>
+</tr>
+<tr>
+<td>192.88.99.0/24</td>
+<td>192.88.99.0–192.88.99.255</td>
+<td>256</td>
+<td>Internet</td>
+<td>Reservada.  Previament utilitzada per a relay IPv6 a IPv4.  (incloent el bloc d'adreces IPv6 2002::/16).</td>
+</tr>
+<tr>
+<td>192.168.0.0/16</td>
+<td>192.168.0.0–192.168.255.255</td>
+<td>65.536</td>
+<td>Xarxa privada</td>
+<td>Utilitzat per a les comunicacions locals dins d'una xarxa privada.</td>
+</tr>
+<tr>
+<td>198.18.0.0/15</td>
+<td>198.18.0.0–198.19.255.255</td>
+<td>131.072</td>
+<td>Xarxa privada</td>
+<td>Utilitzat per a proves de rendiment entre dos dispositius separats.</td>
+</tr>
+<tr>
+<td>198.51.100.0/24</td>
+<td>198.51.100.0–198.51.100.255</td>
+<td>256</td>
+<td>Documentació</td>
+<td>Assignat com a TEST-NET-2, per a documentació i exemples.</td>
+</tr>
+<tr>
+<td>203.0.113.0/24</td>
+<td>203.0.113.0–203.0.113.255</td>
+<td>256</td>
+<td>Documentació</td>
+<td>Assignat com a TEST-NET-3, per a documentació i exemples.</td>
+</tr>
+<tr>
+<td>224.0.0.0/4</td>
+<td>224.0.0.0–239.255.255.255</td>
+<td>268.435.456</td>
+<td>Internet</td>
+<td>Adreces multicast.</td>
+</tr>
+<tr>
+<td>240.0.0.0/4</td>
+<td>240.0.0.0–255.255.255.254</td>
+<td>268.435.456</td>
+<td>Internet</td>
+<td>Reservada per a usos futurs.</td>
+</tr>
+<tr>
+<td>255.255.255.255/32</td>
+<td>255.255.255.255</td>
+<td>1</td>
+<td>Subxarxa</td>
+<td>Adreça de difusió limitada.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="calcul-de-ladreca-de-broadcast">Càlcul de l'adreça de <em>broadcast</em></h2>
+<p>Per a calcular l'adreça de broadcast de la xarxa a la que pertany una adreça IP i la seua màscara, haurem de seguir aquests passos:</p>
+<ol>
+<li>
+<p><strong>Converteix</strong> l'adreça IP i la màscara <strong>a format binari</strong>. Per exemple, si l'adreça IP és 192.168.1.100 i la màscara és 255.255.255.0, en binari serien:</p>
+<ul>
+<li>IP: 11000000.10101000.00000001.01100100</li>
+<li>Màscara: 11111111.11111111.11111111.00000000</li>
+</ul>
+</li>
+<li>
+<p>Fes una operació AND lògica entre l'adreça IP i la màscara per a <strong>obtenir l'adreça de xarxa</strong>. Aquesta operació consisteix a comparar els bits de cada octet i retornar 1 si tots dos són 1, o 0 en cas contrari. Per exemple:</p>
+<ul>
+<li>IP: 11000000.10101000.00000001.01100100</li>
+<li>Màscara: 11111111.11111111.11111111.00000000</li>
+<li>Xarxa: 11000000.10101000.00000001.00000000</li>
+</ul>
+</li>
+<li>
+<p>Per a trobar l'adreça de broadcast, has de <strong>canviar tots els bits de la part del host de l'adreça de xarxa per 1</strong>. La part del host són els bits que corresponen als 0 de la màscara. Per exemple, si l'adreça de xarxa és 192.168.1.0 i la màscara és 255.255.255.0, la part del host és l'últim octet, per tant, l'adreça de broadcast seria 192.168.1.255. En binari, seria:</p>
+<ul>
+<li>Xarxa: 11000000.10101000.00000001.00000000</li>
+<li>Broadcast: 11000000.10101000.00000001.11111111</li>
+</ul>
+</li>
+</ol>
+<h2 id="adrecament-classful">Adreçament <em>Classful</em></h2>
+<p>L'adreçament basat en classes (A, B, C, D i E) i les seues màscares de xarxa predeterminades és conegut com <strong>adreçament <em>classful</em></strong>. Quan fou <strong>creat a l'any 1981</strong> Internet era una xarxa molt petita i nungú imaginava que arribaria a tindre la quantitat d'equips que té actualment.</p>
+<p>De fet, abans de l'adreçament <em>classful</em>, a les primeres etapes del desenvolupament del protocol d'Internet, les adreces IP eren concebudes com un primer octet (8 bits) per dessignar la xarxa i els altres tres octets següents per als equips dins de eixa xarxa.</p>
+<p>L'adreçament <em>classful</em> en el seu dia va aportar diversos <strong>avantatges</strong>:</p>
+<ul>
+<li>
+<p><strong>Facilitat i claredat</strong>: Hi ha <strong>poques classes</strong> per tirar i és molt fàcild'entendre com es divideixen les adreces. La distinció entre classes és clara i evident. Les divisions entre els ID de xarxa i l'ID de hosts a les classes A, B i C estan als límits de l'octet i això fa fàcil dir quin és l'identificador de qualsevol adreça.</p>
+</li>
+<li>
+<p><strong>Flexibilitat raonable</strong>: Els tres nivells de <strong>granularitat</strong> coincideixen raonablement bé amb els tamanys de les organitzacions (grans, mitjanes i petites). </p>
+</li>
+<li>
+<p><strong>Facilitat d'enrutament</strong>: La classe de l'adreça va codificada just en l'adreça (primers bits del primer octet) perquè siga <strong>fàcil per als routers</strong> saber quina part de qualsevol adreça és l'<strong>identificador de xarxa i quina l'identificador de host</strong>. No ho ha necessitat d'informació anexa, com la màscara de subxarxa.</p>
+</li>
+<li>
+<p><strong>Adreces reservades</strong>: Algunes adreces estan reservades per a <strong>propòsits especials</strong>. Açò inclou no sols les classes D i E, també rangs especials d'adreces reservades per a l'adreçament "privat".</p>
+</li>
+</ul>
+<p>Ningú esperava que Internet arribaria a ser una xarxa amb la magnitut actual. Açò ha produït que siguen més evidents els <strong>problemes</strong> de l'adreçament <em>classful</em>:</p>
+<ul>
+<li>
+<p><strong>Falta de flexibilitat</strong>: Quan se li assigna a una empresa una adreça de xarxa (A, B o C) estem <strong>limitant e un nombre d'oridnadors concret per a la nostra xarxa</strong> (A = 2²⁴-2 = 16.777.214, B = 2¹⁶-2 = 65.534, C = 2⁸-2 = 254) que no té el perquè de coincidir amb les necessitats reals de l'empresa.</p>
+</li>
+<li>
+<p><strong>Ús ineficient de l'espai d'adreces</strong>: L'existència de sols tres tamanys de bloc de classes (A, B i C) dona peu a la <strong>pèrdua d'espai d'adreces IP</strong>.</p>
+</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Desaprofitament d'adreces</p>
+<p>Si tens una empresa amb 5.000 ordenadors necessites una adreça de xarxa de classe B per poder incorporar-los tots i desperdiciaries 60.000 adreces de les 65.000 de la xarxa de classe B.</p>
+<p><center><img alt="Desaprofitament d'IPs" src="../img/ips/desaprofitament.png" width="75%" /></center></p>
+</div>
+<ul>
+<li><strong>Baixa granularitat</strong>: Tres tamanys (A, B i C) semblen correctes, en principi, però <strong>les diferències entre els tamanys son enormes</strong>. La diferència de tamany entre les xarxes de classe C i classe B és massa gran (un bot de 254 hosts fins a més de 65.000). Per atra banda, <strong>quantes empreses necessiten una classe A (16 milions d'adreces IP)?</strong>.</li>
+</ul>
+<h3 id="subnetting"><em>Subnetting</em></h3>
+<ul>
+<li>
+<p>En el sistema d'adreçament de subxarxes <em>classful</em>, la divisió xarxa/host de l'adreça IP es converteix en un sistema de tres nivells (A, B i C). Si emprem una adreça de classe C tenim 24 bits per a l'ID de xarxa i els 8 bits restants per a l'ID del host.</p>
+</li>
+<li>
+<p>Emprant el <strong>subnetting</strong> podem dividir la nostra xarxa en diverses subxarxes:</p>
+</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple subnetting</p>
+<p><center><img alt="Exemple subnetting" src="../img/ips/subnetting.png" width="80%" /></center></p>
+<p>Al cas anterior de l'adreça de classe C, l'ID de host pot dividir-se en, per exemple, 2 bits per a un ID de subxarxa i 6 per a l'ID del host. Açò permetrà tindre 2² = 4 subxarxes (00, 01, 10 i 11).</p>
+<p>La màscara de subxarxa seria 26 '1' seguits de 6 '0', els zeros indiquen quina part de l'adreça és el host. En la notació decimal amb punts, açò seria 255.255.255.192</p>
+</div>
+<ul>
+<li>Mitjançant el <em>subnetting</em> podem dividir una adreça IP de la classe que siga en diverses subxarxes depenent d eles nostres necessitats.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple subnetting. Descomposició en subxarxes</p>
+<p>A continuació podem veure les 6 primeres subxares de les 16 en les quals s'ha descomposat una <strong>adreça de classe C emprant 4 bits per <em>subnetting</em></strong>:</p>
+<p><center><img alt="Exemple descomposició subxarxes" src="../img/ips/exemple_subnetting.png" width="100%" /></center></p>
+</div>
+<h2 id="adrecament-classless">Adreçament <em>Classless</em></h2>
+<p>Per tal de solucionar la problemàtica de l'adreçament IP amb classes (Classful), naix l'adreçament IP <strong>sense classes</strong> o <strong>CIDR</strong>.</p>
+<p>CIDR, en essència, aplica el mateix que el <em>subnetting</em> però ampliant el concepte.</p>
+<p>En CIDR <strong>no existeixen classes</strong> A, B o C. El valor de l'adreça IP no implica ninguna màscara implícita, com ocorria abans amb els primers bits de l'adreça. <strong>Tota definició d'una xarxa IP deu anar acompanyada d'una adreça  de màscara</strong> que concreta la xarxa.</p>
+<p>Per exemple, quan parlem en termes de CIDR no podem afirmar que l'adreça 172.17.25.12 pertany a la xarxa 172.17.0.0 si no ve especificada com 172.17.25.12/16</p>
+<p>En CIDR ja no s'empra el terme "classe d'una xarxa", perquè no hi han classes com a tal, sinò xarxes definides per el sufix que acompanya a l'adreça de xarxa.</p>
+<p>Com es pot entendre en CIDR tampoc podem aplicar el concepte de <em>subnetting</em> tradicional. CIDR defineix una jerarquia de xarxes, cadascuna amb el seu tamany específic, i que algunes poden encaixar dintre d'altres.</p>
+<p>CIDR va fer seua la nomenclatura de barra invertida, del tipus /xx (on xx representa el bits marcats a '1' de la màscara en binari) i està basada en el que es va denominar <strong><em>variable-lenght subnet masking (VLSM)</em></strong>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna a l'inici
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Peu de pàgina" >
+        
+          
+          <a href="../SMX1-XAL-4/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Unitat 4">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Unitat 4
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../SMX1-XAL-6/" class="md-footer__link md-footer__link--next" aria-label="Següent: Unitat 6">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Següent
+              </span>
+              <div class="md-ellipsis">
+                Unitat 6
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Apunts XAL - 1SMX by JASB (origin from P. Galera) es troba sota llicència CC BY-NC-SA 4.0 - <a href="#__consent">Canvia la configuració de les cookies</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:ja.sanchezbonache@edu.gva.es" target="_blank" rel="noopener" title="Contacte" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+
+<h4>Consentiment de Cookies</h4>
+<p>Utilitzem cookies per reconèixer les vostres visites i preferències repetides, així com per mesurar l'eficàcia de la nostra documentació i si els usuaris troben el que estan cercant. Amb el vostre consentiment, ens esteu ajudant a millorar la nostra documentació.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accepta</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestiona la configuració</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.footer", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

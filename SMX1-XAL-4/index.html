@@ -1,0 +1,1203 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="José A. Sánchez">
+      
+      
+        <link rel="canonical" href="https://jbonache.github.io/xal-smx/SMX1-XAL-4/">
+      
+      
+        <link rel="prev" href="../SMX1-XAL-3/">
+      
+      
+        <link rel="next" href="../SMX1-XAL-5/">
+      
+      
+      <link rel="icon" href="../img/logojaume.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>UD4. Dispositius específics d'una xarxa local - Xarxes Area Local</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-GJ8MB56SLW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-GJ8MB56SLW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-GJ8MB56SLW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="UD4. Dispositius específics d'una xarxa local - Xarxes Area Local" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-4.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://jbonache.github.io/xal-smx/SMX1-XAL-4/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="UD4. Dispositius específics d'una xarxa local - Xarxes Area Local" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-4.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ud4-dispositius-especifics-duna-xarxa-local" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href=".." title="Xarxes Area Local" class="md-header__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xarxes Area Local
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD4. Dispositius específics d'una xarxa local
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode oscur"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode oscur" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode clar"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clar" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Xarxes Area Local" class="md-nav__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    Xarxes Area Local
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-PRG/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P. Didàctica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Unitat 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Unitat 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teoria UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1-Act/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitats UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unitat 4
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 4
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducció
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repetidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repetidor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipus-de-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipus de Hubs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipus-de-connexions-al-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipus de connexions al Hub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connexio-entre-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connexió entre Hubs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topologia-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topologia Hubs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pont-o-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pont o Bridge
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pont o Bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#domini-de-collisio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domini de col·lisió
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-o-commutador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch o Commutador
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#router-o-encaminador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Router o Encaminador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Router o Encaminador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caracteristiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Característiques
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocols-dencaminament" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocols d'encaminament
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temps-de-convergencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temps de convergència
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passarelles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passarel·les
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducció
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repetidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repetidor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipus-de-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipus de Hubs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipus-de-connexions-al-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipus de connexions al Hub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connexio-entre-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connexió entre Hubs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topologia-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topologia Hubs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pont-o-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pont o Bridge
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pont o Bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#domini-de-collisio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domini de col·lisió
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-o-commutador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch o Commutador
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#router-o-encaminador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Router o Encaminador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Router o Encaminador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caracteristiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Característiques
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocols-dencaminament" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocols d'encaminament
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temps-de-convergencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temps de convergència
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passarelles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passarel·les
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ud4-dispositius-especifics-duna-xarxa-local">UD4. Dispositius específics d'una xarxa local</h1>
+<h2 id="introduccio">Introducció</h2>
+<p>Els dispositius d'interconnexió de xarxes treballen entre els nivells 1 i 3 del model OSI, és a dir, físic, enllaç i xarxa.</p>
+<p><center><img alt="Dispositius de xarxa" src="../img/dispositius/dispositius_xarxa.jpg" width="50%" /></center></p>
+<h2 id="repetidor">Repetidor</h2>
+<p>El repetidor <strong>rep un senyal atenuat i retorna el senyal al seu estat original</strong>. Per exemple: hem vist que la distancia màxima del cablejat UTP és de 100 m, és per això que necessitarem repetidors per tal d'amplificar la cobertura.</p>
+<p>Els repetidors treballen a nivell 1 (físic):</p>
+<p><center><img alt="Repetidor" src="../img/dispositius/repetidor_osi.png" width="50%" /></center></p>
+<p>L'anomenarem <strong>amplificador</strong> si s'encarrega de regenerar senyals <strong>analògics</strong> i li direm <strong>repetidor</strong> si regenera senyals <strong>digitals</strong> a escala de bits.</p>
+<p>Els repetidors i amplificadors presenten algunes <strong>limitacions</strong>:</p>
+<ul>
+<li><strong>ATENUACIÓ</strong>: si el senyal arriba massa atenuada, no pot reconstruir-se correctament, per la qual cosa, existeixen distàncies màximes de separació depenent del medi de transmissió.</li>
+<li><strong>NOMBRE DE DISPOSITIUS</strong>: cada vegada que s'amplifica un senyal analògic s'afegeix un component de soroll. Un senyal no pot travessar un nombre infinit d'amplificadors perquè es distorsionaria massa i no seria una còpia reconstruïda de l'original.</li>
+</ul>
+<p>De vegades, <strong>els repetidors es poden emprar per a convertir el senyal d'un sistema de cablejat a altre</strong>. Per exemple, un repetidor podria tindre una entrada 10Base2 (coaxial) i altra 10BaseT (parell trenat).</p>
+<p>Els repetidors s'empren tant en <strong>cables de coure</strong> portadors de senyals elèctrics com en <strong>cables de fibra òptica</strong> portadors de llum.</p>
+<p>S'empren també als <strong>cables transcontinentals i transoceànics</strong> perquè l'atenuació (pèrdua de senyal) en aqueixes distàncies seria completament inacceptable sense ells.</p>
+<p>Un <strong>repetidor wifi</strong>, també anomenat <strong>amplificador wifi</strong> compleix amb les característiques de funcionalitat d'un repetidor perquè recull un senyal que rep i l'amplifica amb l'objectiu d'augmentar el rang del senyal.</p>
+<h2 id="hub">Hub</h2>
+<p>El hub o concentrador s'encarrega de <strong>regenerar els senyals de xarxa</strong> d'igual forma que un repetidor, però <strong>permet més d'un dispositiu</strong>, per això, de vegades, se'ls anomena repetidors multiports.</p>
+<p>Els <strong>hubs</strong> es consideren, per tant, dispositius de <strong>capa 1</strong> donat que sols regeneren el senyal i l'envien mitjançant un <em>broadcast</em> (envien informació a tota la resta d'equips) a tots els ports.</p>
+<p><center><img alt="Hub IBM" src="../img/dispositius/hub.png" width="50%" /></center></p>
+<ul>
+<li><strong>AVANTATGES</strong>:</li>
+<li>Crea un <strong>punt de connexió central</strong> per als ordinadors.</li>
+<li>Augmentem la <strong>fiabilitat</strong> de la xarxa en regenerar el senyal i independitzar cada connexió.</li>
+<li><strong>Ràpids</strong> perquè no ham de processar el senyal. Es limiten a copiar bits.</li>
+<li><strong>No requereixen configuració</strong>.</li>
+<li><strong>Barats</strong>.</li>
+<li><strong>DESAVANTATGES</strong>:</li>
+<li><strong>No segmenten la xarxa</strong>: si es produeix una col·lisió, aquesta es propaga a tots els segments de la xarxa.</li>
+<li><strong>Problemes de privadesa</strong>: no és capaç de decidir on s'envia el senyal i ho envia a tots.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Actualment, els hubs estan en desús perquè han sigut substituïts pels switchs i sols podem trobar-ne en instal·lacions antigues.</p>
+</div>
+<h3 id="tipus-de-hubs">Tipus de Hubs</h3>
+<ul>
+<li><strong>Hubs pasius</strong>: la seua funció principal consisteix a interconnectar tota la xarxa.</li>
+<li><strong>Hubs actius</strong>: a banda de la seua funció bàsica de concentrador, també amplifiquen i regeneren el senyal rebut abans de reenviar-lo.</li>
+</ul>
+<h3 id="tipus-de-connexions-al-hub">Tipus de connexions al Hub</h3>
+<ul>
+<li><strong>Connectors per unir estacions de treball</strong>.</li>
+<li><strong>Connectors per a unir-se a altres Hubs</strong>: permeten la connexió de diversos Hubs mitjançant <strong>enllaços especials (creuats)</strong>. De vegades existeix un botó, anomenat <strong><em>crossover</em></strong> que ha de mantenir-se actiu per poder unir Hubs. Altres vegades aquest enllaç està sempre actiu i sol tenir el nom d'<strong><em>uplink</em></strong>.</li>
+</ul>
+<p><center><img alt="Hub amb enllaç uplink" src="../img/dispositius/hub_uplink.jpg" width="50%" /></center></p>
+<p><center><img alt="Hub amb crossover" src="../img/dispositius/hub_crossover.png" width="50%" /></center></p>
+<h3 id="connexio-entre-hubs">Connexió entre Hubs</h3>
+<ul>
+<li><strong>Connexió en cascada</strong>: es permeten fins a 4 Hubs si la xarxa treballa a 10 Mbps o 2 si la xarxa treballa a 100 Mbps. Si es volen connectar més serà necessari emprar repetidors intermedis o emprar connexions en estrela (més recomanable).</li>
+<li><strong>Connexió en estrela</strong>: Cada Hub connecta el seu port 1 al Hub central. Els cables que els connecten són iguals al de les estacions de treball. Açò permet que l'única limitació siga el nombre de ports del Hub.</li>
+</ul>
+<h3 id="topologia-hubs">Topologia Hubs</h3>
+<ul>
+<li><strong>FÍSICA</strong>: s'estableix una <strong>topologia en estrela</strong>.</li>
+<li><strong>LÒGICA</strong>:</li>
+<li><strong>BUS(HUB)</strong>: la xarxa es comporta com un bus, enviant els senyals que els arriben per totes les eixides. Inconvenient: Si 2 estacions transmeten a la vegada, es produeixen col·lisions.</li>
+<li><strong>ANELL(MAU)</strong>: s'envia el senyal que li arriba per un port al següent.</li>
+</ul>
+<p>En ambdós casos el protocol corresponent haurà de controlar qui pot transmetre per tal d'evitar col·lisions.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>A les xarxes locals antigues sense concentradors si fallava algun enllaç, tota la xarxa deixava de funcionar i el tècnic havia de comprovar un per un tots els cables i totes les connexions perquè no sabia amb antelació quin havia fallat. Xafar un cable de xarxa o enganxar-se amb ell podia posar "de volta" el departament o l'empresa sencera.</li>
+<li>A les xarxes amb concentradors, en compte de distribuir les connexions, el concentrador les centralitza en un únic dispositiu, mantenint indicadors lluminosos del seu estat i impedint que una d'elles puga fer fallar tota la xarxa. Cada estació es connecta directament al concentrador mitjançant el cable corresponent i, si eixe enllaç falla, la xarxa segueix funcionant i sols queda aïllat l'ordinador afectat.</li>
+</ul>
+</div>
+<h2 id="pont-o-bridge">Pont o Bridge</h2>
+<p>Un pont és un <strong>dispositiu de capa 2 (enllaç)</strong> dissenyat per <strong>connectar dos segments</strong> LAN, que poden tenir <strong>diferents topologies i diferents protocols</strong> a nivell MAC i d'enllaç. Per exemple, poden connectar una xarxa <em>Ethernet</em> amb una <em>Token ring</em>.</p>
+<p>Un pont és un dispositiu amb dos ports que tenen certa <strong>capacitat de control</strong>, permetent acceptar i reexpedir trames en funció del seu contingut.</p>
+<p>El propòsit d'un pont és <strong>filtrar el tràfic d'una LAN</strong>, perquè el tràfic local seguisca essent local, però <strong>permetent la connectivitat a altres parts (segments) de la LAN</strong> per tal d'enviar tràfic dirigit a aquestes altres parts.</p>
+<p><center><img alt="Esquema de xarxa amb bridge" src="../img/dispositius/bridge_esquema.jpg" width="75%" /></center></p>
+<p><center><img alt="Convertidor Fibra-Ethernet" src="../img/dispositius/bridge_fibra_t.png" width="50%" /></center></p>
+<details class="question" open="open">
+<summary>Què és un segment d'una xarxa?</summary>
+<p>Quan la xarxa es divideix en 2 segments es consideren dues parts distintes de la xarxa. Per exemple, la xarxa del pis 1 i la del pis 2 que estan connectades; en una petita empresa que té dues oficines en dos edificis i estan connectats entre si...</p>
+</details>
+<details class="question" open="open">
+<summary>Si un pont permet la connectivitat entre 2 segments, com pot detectar el pont quin és el tràfic d'un segment i quin no?</summary>
+<p>Emprant el mateix sistema que el servei de correus, mitjançant adreces físiques (MAC) un pont identifica de quin segment és el tràfic que li arriba.</p>
+<p>Cada dispositiu de xarxa té una adreça MAC exclusiva a la targeta de xarxa, el pont <strong>rastreja quines són les adreces MAC que estan ubicades a cada costat d'ell</strong> i pren les seues decisions basant-se en un llistat d'adreces MAC.</p>
+</details>
+<h3 id="domini-de-collisio">Domini de col·lisió</h3>
+<p>Grup de dispositius connectats al mateix medi físic, de manera que si dos dispositius accedeixen al medi al mateix temps, el resultat serà una col·lisió entre els dos senyals.</p>
+<p>A causa d'aquestes col·lisions es produeix un consum inadequat de recursos i d'amplada de banda que pot dur a congestions serioses de la xarxa. Com menor siga la quantitat de dispositius en un domini de col·lisió, millor funcionarà la xarxa.</p>
+<p>Els repetidors o els hubs no poden aïllar el tràfic <em>broadcast</em> que es genera a la xarxa en treballar al nivell 1 d'OSI. El <strong>pont</strong> no pot prendre decisions d'encaminament (com arribar a un destí) perquè no treballa a nivell 3 d'OSI. Tanmateix, en operar al <strong>nivell 2</strong>, pot treballar amb adreces MAC i saber per la seua <strong>taula d'adreces MAC</strong> a quin port reexpedir la trama si l'equip es troba a l'esmentat segment.</p>
+<p>En la pràctica, <strong>el pont divideix un domini de col·lisió en 2 segments separats, augmentant el rendiment de la xarxa pel fet d'evitar col·lisions</strong>.</p>
+<p>Els ponts poden crear-se mitjançant:</p>
+<ul>
+<li><strong>Software</strong>: Un ordinador amb dues targetes de xarxa i una aplicació que li permeta actuar com a pont.</li>
+<li><strong>Hardware</strong>: dispositiu específic.</li>
+</ul>
+<p><center><img alt="Bridge vs Switch" src="../img/dispositius/Comparaci%C3%B3n-entre-Bridge-y-Switch.png" width="75%" /></center></p>
+<h2 id="switch-o-commutador">Switch o Commutador</h2>
+<p>Permet la interconnexió de xarxes a nivell d'enllaç.</p>
+<p><center><img alt="Switch en capa 2 OSI" src="../img/dispositius/switch_osi.jpg" width="50%" /></center></p>
+<p>Emprant l'adreça MAC, els switchs són capaços d'<strong>enviar les dades tan sols cap al port de destí</strong>.</p>
+<p>El commutador permet <strong>repartir l'amplada de banda</strong> de la xarxa d'una manera apropiada en cada segment de la xarxa de forma transparent als usuaris.</p>
+<p>Existeixen al mercat alguns commutadors de nivell 3 que incorporen funcions d'encaminament però amb la velocitat de la commutació.</p>
+<p>Els switchs són gestionables mitjançant <strong>protocols</strong> típics de gestió de xarxa: SNMP, RMON... La majoria d'ells són <strong>gestionables via web</strong>.</p>
+<p>La majoria dels switchs son <strong>apilables i fàcilment escalables</strong>. Solen connectar-se entre ells mitjançant el port <strong><em>MDIX o MDI-X (Medium Dependent Interface Crossover)</em></strong>.</p>
+<p>Emprant tecnologia específica dels switchs, les xarxes d'àrea local virtuals (<strong>VLANs</strong>) permeten que els nodes de la xarxa es connecten a xarxes lògiques en compte de xarxes físiques.</p>
+<p><center><img alt="Switch Huawei 48p" src="../img/dispositius/switch48p.jpg" width="75%" /></center></p>
+<h2 id="router-o-encaminador">Router o Encaminador</h2>
+<p>Permet la <strong>interconnexió de xarxes a nivell de xarxa (nivell 3)</strong>. S'encarrega de seleccionar la millor ruta per tal que els paquets (datagrames) arriben al seu destí.</p>
+<p><center><img alt="Router en capa 3 OSI" src="../img/dispositius/router_osi.png" width="50%" /></center></p>
+<p>Els encaminadors s'han convertit en el nucli d'Internet al ser els reguladors del tràfic. Prenen <strong>decisions basades en grups d'adreces de xarxa (mitjançant les adreces IP i les màscares)</strong> emprant el protocol IP.</p>
+<p>Els routers també poden <strong>connectar distintes tecnologies de capa d'enllaç</strong>. Per exemple Ethernet, Token-ring i FDDI (fibra òptica).</p>
+<p><center><img alt="Router CISCO" src="../img/dispositius/router_cisco.jpg" width="75%" /></center></p>
+<h3 id="caracteristiques">Característiques</h3>
+<ul>
+<li><strong>Interpreten les adreces lògiques (adreces IP)</strong> de la capa 3 (xarxa), en compte de les adreces MAC de la capa d'enllaç com fan els ponts o commutadors.</li>
+<li>En treballar en un nivell superior són capaços de <strong>canviar el format d'una trama</strong> per a permetre operar amb tecnologies d'enllaç distintes: Ethernet, Token-ring, FDDI i ATM.</li>
+<li><strong>Proporcionen seguretat</strong> a través de sofisticats filtres de paquets (datagrames) actuant de tallafocs o <em>firewalls</em>.</li>
+<li><strong>Redueixen la congestió de la xarxa</strong> aïllant el tràfic i els dominis de col·lisió a les distintes subxarxes a les quals estan connectats.</li>
+<li>Permeten l'existència de diferents <strong>rutes alternatives contra congestions i fallades</strong> a les comunicacions.</li>
+<li>Els protocols de nivell 3 (xarxa) més emprats pels encaminadors són: <strong><em>IP, IPX, AppleTalk, DECnet, XNS</em></strong>.</li>
+</ul>
+<p>Els routers comercials es poden classificar en 2 segons com reompli la seua taula d'encaminament:</p>
+<ul>
+<li><strong>Encaminadors amb algorisme d'encaminament estàtic (static routing)</strong>: la taula d'encaminament és programada per l'administrador de xarxa.</li>
+<li><strong>Avantatges</strong>:<ul>
+<li>Ràpids i senzills</li>
+</ul>
+</li>
+<li><strong>Desavantatges</strong>:<ul>
+<li>No té capacitat per aprendre la topologia de la xarxa.</li>
+<li>Qualsevol canvi requereix una intervenció de l'administrador de l'encaminador.</li>
+</ul>
+</li>
+<li><strong>Encaminador amb algorismes d'encaminament adaptatiu (dynamic routing)</strong>: són capaços d'aprendre per ells mateixos la topologia de la xarxa.</li>
+<li><strong>Avantatges</strong>:<ul>
+<li>Són capaços d'aprendre per ells mateixos.</li>
+<li>Són més flexibles.</li>
+</ul>
+</li>
+<li><strong>Desavantatges</strong>:<ul>
+<li>Complexos i amb rendiment menor en haver de confeccionar dinàmicament la taula d'encaminament.</li>
+</ul>
+</li>
+</ul>
+<p><center><img alt="Router Mikrotik" src="../img/dispositius/router_mikrotik.jpg" width="75%" /></center></p>
+<h3 id="protocols-dencaminament">Protocols d'encaminament</h3>
+<p>Un protocol d'encaminament és el que empra el router per a comunicar-se amb altres routers i aprendre la topologia de la xarxa. És utilitzat per calcular quin és el millor camí (<strong><em>best path</em></strong>) per tal d'arribar al destí.</p>
+<p>El millor camí dependrà de l'activitat de la xarxa (enllaços actius, velocitat de transmissió entre enllaços...)</p>
+<p>El <strong>cost d'una ruta</strong> és un valor numèric que representa que bo és el camí que la representa: a menor cost, millor camí.</p>
+<p>Existeixen <strong>protocols basats en el vector-distància</strong> (RIP, RIPv1, RIPv2, BGP) i altres <strong>basats en l'estat de l'enllaç</strong>.</p>
+<h3 id="temps-de-convergencia">Temps de convergència</h3>
+<p>Quan es produeix una <strong>alteració topològica</strong> a la xarxa (s'afig un node o deixa d'estar disponible, una nova ruta al destí...)s'han de <strong>recalcular les rutes</strong> per tal d'adaptar-se a la nova situació.</p>
+<p>El <strong>temps de convergència</strong> és el temps que tarda l'encaminador a trobar el millor camí quan es produeix una alteració topològica a la xarxa.</p>
+<p>Cal dissenyar protocols d'encaminament que tinguen <strong>menor temps de convergència</strong> possible per tal que siguen més flexibles davant un canvi.</p>
+<h3 id="passarelles">Passarel·les</h3>
+<p>Moltes vegades es confon el terme passarel·la amb el terme encaminador o router.</p>
+<p>A l'arquitectura TCP/IP una passarel·la és un dispositiu que s'encarrega de l'encaminament de la informació i la interconnexió de xarxes diferents.</p>
+<p>La <strong>passarel·la (porta d'enllaç o <em>gateway</em>)</strong> és molt més que un router, perquè s'encarrega de <strong>comunicar xarxes amb distinta arquitectura</strong>: TCP/IP, ATM, OSI, X.25...</p>
+<p>Els problemes que poden sorgir en la comunicació entre dues xarxes amb diferents tecnologies són diversos. Alguns d’ells són:</p>
+<ul>
+<li>
+<p><strong>Diferents protocols de comunicació</strong>: Les xarxes amb diferents tecnologies poden utilitzar protocols de comunicació diferents. Això pot dificultar la comunicació entre elles. Les passarel·les han de ser capaces de traduir els protocols de comunicació per permetre la comunicació entre les xarxes.</p>
+</li>
+<li>
+<p><strong>Diferents formats de dades</strong>: Les xarxes amb diferents tecnologies poden utilitzar formats de dades diferents. Això també pot dificultar la comunicació entre elles. Les passarel·les han de ser capaces de convertir els formats de dades per permetre la comunicació entre les xarxes.</p>
+</li>
+<li>
+<p><strong>Problemes de seguretat</strong>: Les passarel·les poden ser punts vulnerables en la xarxa. Si no estan ben configurades o no es mantenen actualitzades, poden ser atacades per pirates informàtics. Això pot posar en perill la seguretat de les dades que es transmeten entre les xarxes.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">... i els <em>Routers</em> de casa?</p>
+<p>Una vegada vists els dispossitius principals de xarxa, podem dire que els <em>Routers</em> que ens instal·len les operadores d'Internet son un <em>Frankenstein</em>, fruit del agrupament de diversos dispossitius com ara: <em>Routers</em>, <em>Switchs</em>, Passarel·les, Punts d'accés sense fils...</p>
+<p><center><img alt="Router? domèstic" src="../img/dispositius/router_domestic_dlink.png" width="50%" /></center></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna a l'inici
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Peu de pàgina" >
+        
+          
+          <a href="../SMX1-XAL-3/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Unitat 3">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Unitat 3
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../SMX1-XAL-5/" class="md-footer__link md-footer__link--next" aria-label="Següent: Unitat 5">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Següent
+              </span>
+              <div class="md-ellipsis">
+                Unitat 5
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Apunts XAL - 1SMX by JASB (origin from P. Galera) es troba sota llicència CC BY-NC-SA 4.0 - <a href="#__consent">Canvia la configuració de les cookies</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:ja.sanchezbonache@edu.gva.es" target="_blank" rel="noopener" title="Contacte" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+
+<h4>Consentiment de Cookies</h4>
+<p>Utilitzem cookies per reconèixer les vostres visites i preferències repetides, així com per mesurar l'eficàcia de la nostra documentació i si els usuaris troben el que estan cercant. Amb el vostre consentiment, ens esteu ajudant a millorar la nostra documentació.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accepta</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestiona la configuració</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.footer", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

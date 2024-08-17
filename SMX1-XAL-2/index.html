@@ -1,0 +1,1491 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="José A. Sánchez">
+      
+      
+        <link rel="canonical" href="https://jbonache.github.io/xal-smx/SMX1-XAL-2/">
+      
+      
+        <link rel="prev" href="../SMX1-XAL-1-Act/">
+      
+      
+        <link rel="next" href="../SMX1-XAL-3/">
+      
+      
+      <link rel="icon" href="../img/logojaume.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>UD2. Instal·lació física d'una xarxa (I). Medis de transmissió. - Xarxes Area Local</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-GJ8MB56SLW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-GJ8MB56SLW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-GJ8MB56SLW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="UD2. Instal·lació física d'una xarxa (I). Medis de transmissió. - Xarxes Area Local" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-2.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://jbonache.github.io/xal-smx/SMX1-XAL-2/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="UD2. Instal·lació física d'una xarxa (I). Medis de transmissió. - Xarxes Area Local" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-2.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ud2-installacio-fisica-duna-xarxa-i-medis-de-transmissio" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href=".." title="Xarxes Area Local" class="md-header__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xarxes Area Local
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD2. Instal·lació física d'una xarxa (I). Medis de transmissió.
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode oscur"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode oscur" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode clar"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clar" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Xarxes Area Local" class="md-nav__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    Xarxes Area Local
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-PRG/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P. Didàctica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Unitat 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Unitat 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teoria UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1-Act/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitats UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unitat 2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 2
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducció
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipus-de-cablejat-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipus de cablejat de xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipus de cablejat de xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cable-de-parell-trenat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable de parell trenat
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cable de parell trenat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cable-utp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable UTP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cable-stp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable STP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cable-ftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable FTP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classificacio-de-cables-de-parell-trenat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classificació de cables de parell trenat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cable-coaxial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable coaxial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fibra-optica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fibra òptica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fibra òptica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#carcateristiques-generals-de-la-fibra-optica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carcaterístiques generals de la fibra òptica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fibra-optica-mono-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fibra òptica mono-mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fibra-optica-multi-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fibra òptica multi-mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transmissions-sense-fil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transmissions sense fil
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transmissions sense fil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#infrarrojos-ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infrarrojos (IR)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radiofrequencia-rf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiofreqüència (RF)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Radiofreqüència (RF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bluetooth-bt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bluetooth (BT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lan-sense-fils-wifi" class="md-nav__link">
+    <span class="md-ellipsis">
+      LAN sense fils (WiFi)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wimax" class="md-nav__link">
+    <span class="md-ellipsis">
+      WIMAX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducció
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipus-de-cablejat-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipus de cablejat de xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipus de cablejat de xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cable-de-parell-trenat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable de parell trenat
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cable de parell trenat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cable-utp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable UTP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cable-stp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable STP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cable-ftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable FTP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classificacio-de-cables-de-parell-trenat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classificació de cables de parell trenat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cable-coaxial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable coaxial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fibra-optica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fibra òptica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fibra òptica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#carcateristiques-generals-de-la-fibra-optica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carcaterístiques generals de la fibra òptica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fibra-optica-mono-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fibra òptica mono-mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fibra-optica-multi-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fibra òptica multi-mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transmissions-sense-fil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transmissions sense fil
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transmissions sense fil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#infrarrojos-ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infrarrojos (IR)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radiofrequencia-rf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiofreqüència (RF)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Radiofreqüència (RF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bluetooth-bt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bluetooth (BT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lan-sense-fils-wifi" class="md-nav__link">
+    <span class="md-ellipsis">
+      LAN sense fils (WiFi)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wimax" class="md-nav__link">
+    <span class="md-ellipsis">
+      WIMAX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ud2-installacio-fisica-duna-xarxa-i-medis-de-transmissio">UD2. Instal·lació física d'una xarxa (I). Medis de transmissió</h1>
+<h2 id="introduccio">Introducció</h2>
+<p>El <strong>medi de transmissió</strong> és el suport físic que facilita el transport de la informació i suposa una part fonamental en la comunicació de les dades.</p>
+<p>Normalment es realitza la tranmissió emprant cablejat de xarxa, però també es pot fer sense fil, de manera inalàmbrica.</p>
+<div class="admonition warning">
+<p class="admonition-title">A tenir en compte...</p>
+<ul>
+<li>
+<p>La <strong>inversió estimada per a cables</strong> en una instal.lació sol ser <strong>inferior al 10%</strong> de cost total.</p>
+</li>
+<li>
+<p>El <strong>70% dels errors produits</strong> en una xarxa es deuen a defectes de <strong>cablejat</strong>.</p>
+</li>
+</ul>
+<p>Per tant, <strong>no hem d'escatimar massa</strong> les inversiona en cablejat estructurat.</p>
+</div>
+<p>La qualitat d'una tranmissió depen de les propietats del material:</p>
+<ul>
+<li><strong>Propietats físiques</strong>: son les propietats generals que permeten descriure un material. Per exemple: pes, color, temperatura de fusió, coeficient de dilatació...</li>
+<li><strong>Propietats mecàniques</strong>: descriuen la resistència que presenta un material quan se'l somet a forces externes. Per exemple: elasticitat, plasticitat, duresa, fragilitat...</li>
+<li><strong>Popietats elèctriques</strong>: son les que determinen el comportament d'un determinat material al passar per ell el corrent elèctric. Trobem materials aillants, conductors i semiconductors.</li>
+</ul>
+<p>Finalment, cal tenir el compte el fenòmen de l'<strong>atenuació</strong>, que és la pèrdua de potència soferta per una senyal al transitar per qualsevol medi de tranmissió.</p>
+<h2 id="tipus-de-cablejat-de-xarxa">Tipus de cablejat de xarxa</h2>
+<ul>
+<li><strong>Cablejat metàlic</strong>: transmeten la informació mitjançant <strong>impulsos elèctrics</strong>.</li>
+<li><strong>Parell trenat</strong> (<em>TP = Twisted Pair</em>)</li>
+<li><strong>Coaxial</strong></li>
+<li><strong>Cables de fibra òptica</strong>: transmeten la informació mitjançat <strong>rajos de llum</strong>.</li>
+</ul>
+<h3 id="cable-de-parell-trenat">Cable de parell trenat</h3>
+<p>Està compost per:</p>
+<ul>
+<li>Una o més parelles de filaments metàlics aïllats (normalment de coure).</li>
+<li>Parelles trenades entre sí.</li>
+<li>Recobriment mitjançant funda protectora.</li>
+</ul>
+<p><center><img alt="esquema de cable de parell trenat amb apantallament" src="../img/cables/tp-2.jpg" width="50%" /></center></p>
+<p>Constitueixen el mode més <strong>simple i econòmic</strong> de tots els medis de transmissió.</p>
+<p>Es tracta d'un cable molt <strong>susceptible a interferències electromagnètiques (EM I)</strong> i per tal de reduir-les tenim dues actuacions:</p>
+<ul>
+<li><strong>Trenar els parells</strong> de mode que les intensitats de transmissió i recepció anulen perturbacions electromagnètiques.</li>
+<li><strong>Apantallar</strong> els cables, és a dir, emprar un protector que els aïlle de les interferències.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Efecte de Crosstalk</p>
+<p>El <em>crosstalk</em>, o diafonía, és un fenomen en què els senyals elèctrics transmesos en un conductor afecten involuntàriament conductors adjacents. Això pot provocar interferències i distorsió en les comunicacions, especialment en cables o línies elèctriques pròximes.</p>
+<p>El <em>crosstalk</em> pot ser causat per diversos factors, com ara la proximitat física dels conductors, la capacità i inductància entre ells, o problemes d'apantallament inadequat. <strong>En entorns de xarxa, el crosstalk pot conduir a errors de transmissió, pèrdua de senyal i reducció de la qualitat de la comunicació</strong>.</p>
+<p>Per mitigar els efectes del <em>crosstalk</em>, es poden prendre mesures com utilitzar cables <strong>apantallats</strong>, mantenir distàncies adequades entre conductors, o implementar tècniques de cancel·lació de diafonia.</p>
+</div>
+<h4 id="cable-utp">Cable UTP</h4>
+<p><strong><em>UTP (Unshielded Twisted Pair)</em></strong> significa <em>parell trenat sense pantalla/escut</em>.</p>
+<p>Les seues principals característiques són:</p>
+<ul>
+<li>És sensible a interferències.</li>
+<li>Ofereix un gran ample de banda.</li>
+<li>És simple i barat.</li>
+<li>És flexible i fàcil d'instal·lar.</li>
+<li>Connecta habitualment estacions de treball, terminals i dispossitius.</li>
+</ul>
+<p>Tot açò fa que siga <strong>el cable més emprat per a comunicar xarxes d'ordinadors</strong>.</p>
+<p><center><img alt="Cable UTP" src="../img/cables/utp.jpg" width="50%" /></center></p>
+<h4 id="cable-stp">Cable STP</h4>
+<p><strong><em>STP (Shielded Twisted Pair)</em></strong> significa <em>parell trenat apantallat</em>.</p>
+<p>Es tracta d'un cable apantallat, molt similar a l'UTP però amb un recobriment per a cada parella de cables (normalment metàlic). El recobriment ha de conectar-se a la terra de la instal·lació per a les derivacions elèctriques.</p>
+<p>L'esmentat recobriment <strong>redueix el soroll</strong> exterior del cable produït per interferències electromagnètiques (EMI) i de radiofreqüència (RFI). També redueix el soroll elèctric dins del cable. Al tractar-se d'un cable més protegit pot treballar amb distàncies i freq¨`encies majors.</p>
+<p><center><img alt="Cable STP" src="../img/cables/stp.jpg" width="66%" /></center></p>
+<h4 id="cable-ftp">Cable FTP</h4>
+<p><strong><em>FTP (Foiled Twisted Pair)</em></strong> significa <em>parell trenat amb pantalla global</em>. És semblant al STP, però el recobriment és exterior i global.</p>
+<p><center><img alt="Cable FTP" src="../img/cables/ftp.jpg" width="66%" /></center></p>
+<div class="admonition info">
+<p class="admonition-title">Els cables <strong>STP i FTP</strong> tenen alguns desavantatges</p>
+<ul>
+<li>Falta de flexibilitat</li>
+<li>Incòmodes d'instal·lar</li>
+<li>Més cars que el cable UTP</li>
+</ul>
+<p>Per aquestes raons, normalment sols s'empren en línies troncals o en llocs molt exposats a interferències electromagnètiques.</p>
+</div>
+<h4 id="classificacio-de-cables-de-parell-trenat">Classificació de cables de parell trenat</h4>
+<p>Dintre dels <strong>parells trenats</strong> podem distingir <strong>2 classificacions</strong>:</p>
+<ul>
+<li><strong>Les catergories</strong>: cada categoria especifica unes característiques elèctriques per al cable: atenuació, capacitat de la linia, freqüència de treball màxima...</li>
+<li><strong>Les classes</strong>: cada classe especifica les distàncies permeses, l'ample de banda aconseguit i les aplicacions per a les quals és útil en funció d'aquestes característiques.</li>
+</ul>
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Categoria</strong></th>
+<th style="text-align: center;"><strong>Freqüència màxima</strong></th>
+<th style="text-align: center;"><strong>Velocitat màxima</strong></th>
+<th style="text-align: center;"><strong>Ús</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Cat.3</td>
+<td style="text-align: center;">16 Mhz</td>
+<td style="text-align: center;">10 Mbps</td>
+<td style="text-align: center;">Obsolet</td>
+</tr>
+<tr>
+<td style="text-align: center;">Cat.4</td>
+<td style="text-align: center;">20 Mhz</td>
+<td style="text-align: center;">20 Mbps</td>
+<td style="text-align: center;">Obsolet</td>
+</tr>
+<tr>
+<td style="text-align: center;">Cat.5</td>
+<td style="text-align: center;">100 Mhz</td>
+<td style="text-align: center;">100 Mbps</td>
+<td style="text-align: center;">Xarxes Fast Ethernet</td>
+</tr>
+<tr>
+<td style="text-align: center;">Cat.5e</td>
+<td style="text-align: center;">[100-350] Mhz</td>
+<td style="text-align: center;">1 Gbps</td>
+<td style="text-align: center;">Xarxes Fast/Gigabit Ethernet</td>
+</tr>
+<tr>
+<td style="text-align: center;">Cat.6</td>
+<td style="text-align: center;">250 Mhz</td>
+<td style="text-align: center;">1 Gbps</td>
+<td style="text-align: center;">Xarxes Gigabit Ethernet</td>
+</tr>
+<tr>
+<td style="text-align: center;">Cat.7</td>
+<td style="text-align: center;">600 Mhz</td>
+<td style="text-align: center;">10 Gbps</td>
+<td style="text-align: center;">Xarxes Gigabit Ethernet i futures</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<h3 id="cable-coaxial">Cable coaxial</h3>
+<p>Degut al seu tipus d'apantallament és menys susceptible a interferències (EMI) que el parell trenat.</p>
+<p>Està compost per una malla de coure recobert d'una capa aïllant flexible. També pot estar fet d'alumini recobert d'estany (més econòmic).</p>
+<p>Permet cobrir majors distàncies (entre 500 m i varios km) i connectar un major nombre d'estacions en una línia compartida.</p>
+<p>Degut a la seua duresa i poca flexibilitat ha deixat d'emprar-se en instal·lacions de cablejat estructurat, però continua utilitzant-se en la distribució de TV per cable.</p>
+<p><center><img alt="Cable coaxial" src="../img/cables/coaxial.jpg" width="50%" /></center></p>
+<ul>
+<li>
+<p><strong>AVANTATGES</strong>:</p>
+<ul>
+<li>Arriba a majors distàncies que el cable UTP o STP (500m vs 100m).</li>
+<li>Més econòmic que la fibra òptica.</li>
+<li>Major blindatge que el cable UTP.</li>
+</ul>
+</li>
+<li>
+<p><strong>DESAVANTATGES</strong>:</p>
+<ul>
+<li>Instal·lació més costosa.</li>
+<li>Major dimensió per la seua grossor.</li>
+<li>Més rígid.</li>
+<li>És necessària una connexió elèctrica sòlida en els extrems. En cas contrari, apareix soroll elèctric que interfereix en la transmissió de la senyal. Per eixa raó, no és suportat pels estàndards actuals.</li>
+</ul>
+</li>
+</ul>
+<p><center><img alt="Coaxial vs Parell trenat" src="../img/cables/coaxVStp.png" width="75%" /></center></p>
+<h3 id="fibra-optica">Fibra òptica</h3>
+<p>La fibra òptica permet la <strong>trensmissió de senyals lluminoses</strong>. Sol ser de vidre o altres materials plàstics.</p>
+<p><center><img alt="Rack de transcivers de fibra òptica" src="../img/cables/rack-fo.jpg" width="66%" /></center></p>
+<p>Al no emprar corrent elèctrica per a la transmissió és totalment <strong>insensible a les interferències electromagnètiques (EMI)</strong>.</p>
+<p>Un cable de fibra òptica consta de:</p>
+<ul>
+<li>un nucli fibrós a través del qual viatja la senyal lluminosa.</li>
+<li>un revestiment que impedeix que es filtre la llum.</li>
+<li>una coberta que protegeix i aïlla el cable.</li>
+</ul>
+<p><center><img alt="Composició d'un cable de fibra òptica" src="../img/cables/fo-compos.jpg" width="66%" /></center></p>
+<p>Com a <strong>font del senyal</strong> sol emprar-se:</p>
+<ul>
+<li>Làser</li>
+<li>Diodes LED</li>
+</ul>
+<h4 id="carcateristiques-generals-de-la-fibra-optica">Carcaterístiques generals de la fibra òptica</h4>
+<ul>
+<li>Cobreix grans distàncies (km).</li>
+<li>Gran ample de banda: superior als 10 Gbps. Un sol cable de fibra òptica pot transportar desenes de milers de trucades telefòniques.</li>
+<li>Taxa d'error molt baixa.</li>
+<li>Sol instal·lar-se en grups, en forma de mangueres, amb un nucli metàlic que serveix de suport i protecció.</li>
+<li>Els principals inconvenients de la fibra són la fragilitat i la dificultat per a realitzar una bona connexió de diverses fibres. Un correcte connexionat evita reflexions de la senyal i una milloria de la qualitat de la transmissió.</li>
+<li>Actualment s'utilitzen dos tipus de fibres òptiques:<ul>
+<li>Fibres mono-mode</li>
+<li>Fibres multi-mode</li>
+</ul>
+</li>
+</ul>
+<h4 id="fibra-optica-mono-mode">Fibra òptica mono-mode</h4>
+<p>Sols es propaga un mode de llum.</p>
+<p>S'aconseguiex reduïnt el diàmetre de la fibra fins un tamany que sols permet un mode de propagació.</p>
+<p>La seua transmissió és paral·lela a l'eix de la fibra. Grans distàncies (300 km) i elevades taxes de transferència (desenes de Gbps).</p>
+<p><center><img alt="Fibra òptica mono-mode" src="../img/cables/mono.png" width="75%" /></center></p>
+<h4 id="fibra-optica-multi-mode">Fibra òptica multi-mode</h4>
+<p>Els rajos de llum poden circular per més d'un mode o camí. Se suposa que no arriben tots a la vegada.</p>
+<p>Pot tenir més de mil modes de propagació de llum. Les fibres multi-mode s'utilitzen comunment en aplicacions de curta distància, menors a 1 km; és simple de dissenyar i econòmic.</p>
+<p>Tenim dos alternatives:</p>
+<ul>
+<li><strong>Índex escalonat</strong>: té un índex de refracció constant en tota la secció cilíndrica.</li>
+</ul>
+<p><center><img alt="F.O. Multi-mode escalonat" src="../img/cables/multi-esc.png" width="75%" /></center></p>
+<ul>
+<li><strong>Índex gradual</strong>: l'índex de refracció a l'interior del nucli no és únic i decreix quan es desplaça del nucli fins la coberta.</li>
+</ul>
+<p><center><img alt="F.O. Multi-mode gradual" src="../img/cables/multi-grad.png" width="75%" /></center></p>
+<h2 id="transmissions-sense-fil">Transmissions sense fil</h2>
+<p>Les tecnologies sense fil empren <strong>ones electromagnètiques</strong> per transportar la informació entre els dispossitius.</p>
+<p>Alguns tipus d'ones electromagnètiques no son adequades per transportar dades. Altres, estan regulades èr governs. Algunes àrees de l'espectre s'han reservat per a ús públic sense tindre que demanar permissos.</p>
+<p>L'<strong>espectre electromagnètic</strong> inclou <strong>bandes de transmissió de radio i televisió, llum visible, rajos X i rajos gamma</strong>. Cadaascun d'aquests elements té un rang específic de longitut d'ona.</p>
+<p><center><img alt="Espectre electromagnètic" src="../img/sense%20fils/eem.jpg" width="75%" /></center></p>
+<p>Les longituts d'ona més emprades per a comunicacions sense fil públiques son la <strong>infraroja i la part de radiofreqüència (RF)</strong>:</p>
+<ul>
+<li>Ona curta (freqüències de MHz): emprades en <strong>radio i TV</strong>.</li>
+<li>Microones (freqüències de GHz): emprades en <strong>telefonia mòbil</strong>.</li>
+<li>Transmissions via satèlit: emprades en <strong>geolocalització</strong> amb freqüències de fins a 1000 GHz.</li>
+</ul>
+<p>Els <strong>avantatges</strong> que aporten les comunicacions sense fils a les <strong>LAN</strong> són:</p>
+<ul>
+<li>Comoditat</li>
+<li>Facilitat de configuració</li>
+<li>Flexibilitat</li>
+</ul>
+<p>Tant l'emissor com el receptor han de tenir una <strong>antena</strong> que els permeta <strong>enviar/rebre</strong> la senyal.</p>
+<p>Com a norma, a major freqüència, major velocitat. De la mateixa manera, a major velocitat, major atenuació.</p>
+<p>Els <strong>sistemes sense fils</strong> emprats <strong>en xarxes informàtiques</strong> són:</p>
+<ul>
+<li>Bluetooth</li>
+<li>Infrarrojos</li>
+<li>Wifi</li>
+<li>WiMax</li>
+</ul>
+<h3 id="infrarrojos-ir">Infrarrojos (IR)</h3>
+<ul>
+<li>Transmeten senyals de dades mitjançant diodes d'<strong>emissió de llum</strong> (LED o làser). La informació <strong>no pot viatjar a través d'obstacles</strong>.</li>
+<li>Emprat per connectar i tranportar dades entre dispossitius com <strong>PDA i PCs</strong>. Utilitza un <strong>port de comunicacions especial anomenat irDA</strong>.</li>
+</ul>
+<p><center><img alt="Detall del port d'infrarrojos d'un nokia 6600" src="../img/sense%20fils/nokia-irda.jpg" width="50%" /></center></p>
+<h3 id="radiofrequencia-rf">Radiofreqüència (RF)</h3>
+<p>Algunes bandes de radiofreqüències s'han reservat per a l'ús de dispossitius sense llicència, com les <strong>LAN sense fil, telèfons sense fil, perifèrics d'ordinadors</strong>...</p>
+<ul>
+<li>Les ones <strong>poden atravessar parets i altres obstacles</strong> i per tant tenen major cobertura que els IR.</li>
+<li>Per a <strong>LAN sense fil existeixen diferents normes/estàndards</strong>. Els més coneguts són:<ul>
+<li>IEEE 802.11b</li>
+<li>IEEE 802.11a</li>
+<li>IEEE 802.11g</li>
+<li>IEEE 802.11n</li>
+<li>IEEE 802.11ac</li>
+<li>IEEE 802.11ax</li>
+</ul>
+</li>
+<li>Altres tipus de comunicació per radiofreqüència son el <strong><em>bluetooth</em></strong> i les <strong>microones</strong>.</li>
+</ul>
+<h4 id="bluetooth-bt">Bluetooth (BT)</h4>
+<p>Especificació per a xarxes sense fil d'àrea personal (WPAN) que possibilita la transmissió de veu i dades entre diferents dispossitius mitjançant un enllaç per radiofreqüència en la banda dels <strong>2'4GHz</strong>.</p>
+<p>Aquesta norma facilita les comunicacions entre equips mòbils, elimina el cablejat i connectors i ofereix la possibilitat de crear xicotetes xarxes sense fil i facilitar la sincronització de dades entre equips personals.</p>
+<p><center><img alt="Dispositius que habitualment tenen connexió bluetooth" src="../img/sense%20fils/disp-bt.jpg" width="50%" /></center></p>
+<h4 id="microones">Microones</h4>
+<p>Es tracta d'un tipus eficaç de transmissió de dades sense fils.</p>
+<ul>
+<li><strong>Terrestre</strong>: empra dues torres de microones amb <strong>camp de visió clar</strong> entre elles; per tant, no han d'ahver-hi obstacles per interrompre l'esmentat camp visual. La freqüència de transmissió de dades dels sistemes terrestres és de 4 GHz a 23 GHz, mentre que les <strong>velocitats</strong> soles estar entre <strong>1Mbps i 10 Mbps</strong>.</li>
+<li><strong>Satèlit</strong>: giren a vora 40.000 km sobre La Terra. Les estacions terrestres envien i reben senyals de dades cap i desde el satètil amb freqüències que oscilen entre 11 GHz i 14 GHz, amb velocitats de desenes de Mbps.</li>
+</ul>
+<p><center><img alt="Esquema d'accés a Internet via satèlit" src="../img/sense%20fils/internet-satelite.jpg" width="50%" /></center></p>
+<h4 id="lan-sense-fils-wifi">LAN sense fils (WiFi)</h4>
+<p>Les transmissions en LANs sense fil arriben a velocitats de transmissió moderades, encara que amb l'aparcició del 802.11n i posteriors s'arriben a "altes" velocitats (&gt;300 Mbps). Les distintes versions de Wifi que existeixen estan descrites a la normativa <a href="https://es.wikipedia.org/wiki/IEEE_802.11#:~:text=802.11n%20es%20la%20forma,datos%20de%20hasta%20600%20Mbps.">IEEE 802.11</a>. A la següent taula podem veure les principals característiques de les variants que s'utilitzen actualment.</p>
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Norma IEEE</strong></th>
+<th style="text-align: center;"><strong>Nom WIFI</strong></th>
+<th style="text-align: center;"><strong>Freq.</strong></th>
+<th style="text-align: center;"><strong>Velocitat</strong></th>
+<th style="text-align: center;"><strong>Alcanç</strong></th>
+<th style="text-align: center;"><strong>Característiques</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">802.11b</td>
+<td style="text-align: center;">Wifi1</td>
+<td style="text-align: center;">2.4GHz</td>
+<td style="text-align: center;">11Mbps</td>
+<td style="text-align: center;">30-90m</td>
+<td style="text-align: center;">Estàndar original</td>
+</tr>
+<tr>
+<td style="text-align: center;">802.11a</td>
+<td style="text-align: center;">Wifi2</td>
+<td style="text-align: center;">5GHz</td>
+<td style="text-align: center;">54Mbps</td>
+<td style="text-align: center;">10-25m</td>
+<td style="text-align: center;">No compatible amb b,g,n. Gestió d'energia roïn</td>
+</tr>
+<tr>
+<td style="text-align: center;">802.11g</td>
+<td style="text-align: center;">Wifi3</td>
+<td style="text-align: center;">2.4GHz</td>
+<td style="text-align: center;">54Mbps</td>
+<td style="text-align: center;">30-45m</td>
+<td style="text-align: center;">Més ràpid i compatible amb 802.11b</td>
+</tr>
+<tr>
+<td style="text-align: center;">802.11n</td>
+<td style="text-align: center;">Wifi4</td>
+<td style="text-align: center;">2.4/5GHz</td>
+<td style="text-align: center;">300-600Mbps</td>
+<td style="text-align: center;">30-60m</td>
+<td style="text-align: center;">Més ràpid i compatible amb b i g</td>
+</tr>
+<tr>
+<td style="text-align: center;">802.11ac</td>
+<td style="text-align: center;">Wifi5</td>
+<td style="text-align: center;">5GHz</td>
+<td style="text-align: center;">800Mbps-1.6Gbps</td>
+<td style="text-align: center;">30-45m</td>
+<td style="text-align: center;">Utilitza components que consumeixen menys energia</td>
+</tr>
+<tr>
+<td style="text-align: center;">802.11ax</td>
+<td style="text-align: center;">Wifi6</td>
+<td style="text-align: center;">2.4/5/6GHz</td>
+<td style="text-align: center;">5Gbps</td>
+<td style="text-align: center;">30-60m</td>
+<td style="text-align: center;">Millor gestió de dispossitius amb xarxa congestionada.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<h4 id="wimax">WIMAX</h4>
+<p>Les transmissions en <strong>WIMAX</strong> segueixen la normativa IEEE 802.16. Semblant al WIFI però amb cobertures majors a canvi de velocitats menors.</p>
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><strong>WIFI (802.11)</strong></th>
+<th style="text-align: center;"><strong>WIMAX (802.16)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Alcanç</strong></td>
+<td style="text-align: center;">100m</td>
+<td style="text-align: center;">50km</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Cobertura</strong></td>
+<td style="text-align: center;">Interior</td>
+<td style="text-align: center;">Exterior</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Freqüència</strong></td>
+<td style="text-align: center;">2.4GHz a 6GHz</td>
+<td style="text-align: center;">20Mhz</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Velocitat</strong></td>
+<td style="text-align: center;">1Gbps</td>
+<td style="text-align: center;">75Mbps</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna a l'inici
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Peu de pàgina" >
+        
+          
+          <a href="../SMX1-XAL-1-Act/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Activitats UD1">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Activitats UD1
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../SMX1-XAL-3/" class="md-footer__link md-footer__link--next" aria-label="Següent: Unitat 3">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Següent
+              </span>
+              <div class="md-ellipsis">
+                Unitat 3
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Apunts XAL - 1SMX by JASB (origin from P. Galera) es troba sota llicència CC BY-NC-SA 4.0 - <a href="#__consent">Canvia la configuració de les cookies</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:ja.sanchezbonache@edu.gva.es" target="_blank" rel="noopener" title="Contacte" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+
+<h4>Consentiment de Cookies</h4>
+<p>Utilitzem cookies per reconèixer les vostres visites i preferències repetides, així com per mesurar l'eficàcia de la nostra documentació i si els usuaris troben el que estan cercant. Amb el vostre consentiment, ens esteu ajudant a millorar la nostra documentació.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accepta</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestiona la configuració</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.footer", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

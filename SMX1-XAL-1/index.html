@@ -1,0 +1,1802 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="José A. Sánchez">
+      
+      
+        <link rel="canonical" href="https://jbonache.github.io/xal-smx/SMX1-XAL-1/">
+      
+      
+        <link rel="prev" href="../SMX1-XAL-PRG/">
+      
+      
+        <link rel="next" href="../SMX1-XAL-1-Act/">
+      
+      
+      <link rel="icon" href="../img/logojaume.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>UD1. Caracterització de xarxes locals - Xarxes Area Local</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-GJ8MB56SLW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-GJ8MB56SLW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-GJ8MB56SLW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="UD1. Caracterització de xarxes locals - Xarxes Area Local" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-1.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://jbonache.github.io/xal-smx/SMX1-XAL-1/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="UD1. Caracterització de xarxes locals - Xarxes Area Local" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-1.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ud1-caracteritzacio-de-xarxes-locals" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href=".." title="Xarxes Area Local" class="md-header__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xarxes Area Local
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD1. Caracterització de xarxes locals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode oscur"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode oscur" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode clar"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clar" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Xarxes Area Local" class="md-nav__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    Xarxes Area Local
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-PRG/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P. Didàctica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Unitat 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Unitat 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Teoria UD1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Teoria UD1
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#un-model-de-comunicacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Un model de comunicació
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Un model de comunicació">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components-duna-comunicacio-telematica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components d'una comunicació telemàtica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serveis-i-protocols" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serveis i protocols
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topologia-de-xarxes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topologia de xarxes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Topologia de xarxes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#topologia-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topologia física
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Topologia física">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#malla" class="md-nav__link">
+    <span class="md-ellipsis">
+      Malla
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrela" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrela
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbre
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mixta-o-irregular" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mixta o irregular
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topologia-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topologia lògica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classificacio-de-xarxes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classificació de xarxes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classificació de xarxes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensio-localitzacio-geoografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extensió (localització geoogràfica)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tecnologia-de-transmissio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tecnologia de transmissió
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tecnologia de transmissió">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xarxes-de-difussio-broadcast-o-multipunt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Xarxes de difussió (broadcast o multipunt)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xarxes-conmutades-punt-a-punt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Xarxes conmutades (punt a punt)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-dacces-o-seguretat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell d'accés o seguretat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elements-de-la-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elements de la xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elements de la xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-cablejat-i-radiolectric" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema de cablejat i radiolèctric
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#els-dispositius-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Els dispositius de xarxa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodes-de-la-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nodes de la xarxa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software de xarxa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-la-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura de la xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura de la xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adrecament" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreçament
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encaminament" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encaminament
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces-al-medi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accés al medi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-de-fluxe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control de fluxe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sincronitzacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sincronització
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-derrors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control d'errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-dels-missatges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format dels missatges
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiplexacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplexació
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-per-capes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura per capes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura per capes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-model-iso-osi" class="md-nav__link">
+    <span class="md-ellipsis">
+      El model ISO-OSI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El model ISO-OSI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivell-fisic-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell físic (I)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-denllac-ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell d'enllaç (II)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-de-xarxa-iii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell de xarxa (III)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-de-transport-iv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell de transport (IV)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-de-sessio-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell de sessió (V)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-de-presentacio-vi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell de presentació (VI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-daplicacio-vii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell d'aplicació (VII)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1-Act/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitats UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#un-model-de-comunicacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Un model de comunicació
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Un model de comunicació">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components-duna-comunicacio-telematica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components d'una comunicació telemàtica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serveis-i-protocols" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serveis i protocols
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topologia-de-xarxes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topologia de xarxes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Topologia de xarxes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#topologia-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topologia física
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Topologia física">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#malla" class="md-nav__link">
+    <span class="md-ellipsis">
+      Malla
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrela" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrela
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbre
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mixta-o-irregular" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mixta o irregular
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topologia-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topologia lògica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classificacio-de-xarxes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classificació de xarxes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classificació de xarxes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensio-localitzacio-geoografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extensió (localització geoogràfica)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tecnologia-de-transmissio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tecnologia de transmissió
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tecnologia de transmissió">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xarxes-de-difussio-broadcast-o-multipunt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Xarxes de difussió (broadcast o multipunt)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xarxes-conmutades-punt-a-punt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Xarxes conmutades (punt a punt)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-dacces-o-seguretat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell d'accés o seguretat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elements-de-la-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elements de la xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elements de la xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-cablejat-i-radiolectric" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema de cablejat i radiolèctric
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#els-dispositius-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Els dispositius de xarxa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodes-de-la-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nodes de la xarxa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software de xarxa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-la-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura de la xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura de la xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adrecament" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreçament
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encaminament" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encaminament
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces-al-medi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accés al medi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-de-fluxe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control de fluxe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sincronitzacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sincronització
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-derrors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control d'errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-dels-missatges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format dels missatges
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiplexacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplexació
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-per-capes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura per capes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura per capes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-model-iso-osi" class="md-nav__link">
+    <span class="md-ellipsis">
+      El model ISO-OSI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El model ISO-OSI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivell-fisic-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell físic (I)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-denllac-ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell d'enllaç (II)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-de-xarxa-iii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell de xarxa (III)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-de-transport-iv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell de transport (IV)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-de-sessio-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell de sessió (V)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-de-presentacio-vi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell de presentació (VI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-daplicacio-vii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell d'aplicació (VII)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ud1-caracteritzacio-de-xarxes-locals">UD1. Caracterització de xarxes locals</h1>
+<h2 id="un-model-de-comunicacio">Un model de comunicació</h2>
+<p>A qualsevol comunicació poden distingir-se (mínim) 6 components:</p>
+<ul>
+<li>La <strong>font</strong> és l'orige del qual procedeix la informació</li>
+<li>L'<strong>emissor</strong> és l'element que s'encarrega de transformar la informació proporcionada per la font per a adaptar-la al canal-medi per el qual es transmetrà.</li>
+<li>El <strong>canal o medi</strong> és l'element per el qual es transmet la informació. Aquest pot ser algún tipus de cable o, en el cas de comunicacions sense fil, l'aire.</li>
+<li>El <strong>soroll</strong> és qualsevol perturbació sobre el medi que afecte a la informació. Açò fa que la informació arribe amb modificacions.</li>
+<li>El <strong>receptor</strong> és l'element que s'encarrega d'extraure la informació del canal i transformar-la per tal que puga ser interpretada correctament per el destí.</li>
+<li>El <strong>destí</strong> és el lloc o entitat que consumeix la informació. Normalment és una persona.</li>
+</ul>
+<h3 id="components-duna-comunicacio-telematica">Components d'una comunicació telemàtica</h3>
+<ul>
+<li>Els <strong>terminals</strong> són els equip que es comuniquen. Exemple: ordinadors, perifèrics d'ús en xarxa (impressores, escàners...) i altres dispositius (mòbils, tauletes...).</li>
+<li>Els <strong>dispositius de xarxa</strong> són el conjunt d'elements físics que fan possible la comunicació entre terminals font i destí. Aquests dispossitius són:<ul>
+<li><strong>Canal de comunicació</strong>: és el medi per el qual circula la informació. Exemple: cable UTP de cat 5.</li>
+<li><strong>Elements d'interconnexió</strong>: són els encarregats d'interconnectar tots els terminals de la xarxa i seleccionar el millor camí per el qual circularà la informació (si és que hi ha més d'un). Exemple: connector RJ45, antenes i equips intermedis.</li>
+<li><strong>Adaptadors de xarxa</strong>: converteixen el format d'informació dels terminals en el format emprat per la xarxa de comunicació.</li>
+</ul>
+</li>
+<li>Els <strong>programes de xarxa</strong> permeten controlar el funcionament de la xarxa, per a fer-la més fiable.</li>
+</ul>
+<h2 id="serveis-i-protocols">Serveis i protocols</h2>
+<p><strong>Serveis</strong> són les funcionalitats que ofereix una xarxa. Per poder oferir estes funcionalitats deuen de seguir un protocol establert i estandaritzat. Exemple: en una xarxa telefònica són serveis: la transmissió de veu, la transmissió de dades, les trucades en espera...</p>
+<p><strong>Protocol</strong> són les normes o regles a seguir al moment de realitzar una comunicació/transmissió de dades. Exemple: en una xarxa de dades un protocol habitual és el protocol TCP.</p>
+<p>Per tant, si una xarxa preten oferir un servei haurà de comprovar si compta amb un protocol adequat per poder oferir-lo.</p>
+<h2 id="topologia-de-xarxes">Topologia de xarxes</h2>
+<p>Una <strong>xarxa</strong> és un conjunt d'ordinadors i/o dispositius connectats per enllaços d'un medi físic (medis guiats) o sense fil (medis no guiats) i que comparteixen informació (fitxers), recursos (CD, impressora...).</p>
+<p>La <strong>topologia</strong> d'una xarxa és la configuració espacial en que es disposen les seues linies i nodes. Existeixen dos tipus de topologies:</p>
+<ul>
+<li><strong>Topologia física</strong>: descriu com estan dispostos a la xarxa els media de transmissió.</li>
+<li><strong>Topologia lògica</strong>: defineix com accedeixen els equips a la xarxa.</li>
+</ul>
+<h3 id="topologia-fisica">Topologia física</h3>
+<p>Les topologies físiques es poden classificar en:</p>
+<ul>
+<li>Bus</li>
+<li>Malla</li>
+<li>Estrela</li>
+<li>Arbre</li>
+<li>Anell</li>
+<li>Mixta o irregular</li>
+</ul>
+<h4 id="bus">Bus</h4>
+<p>S'empra un únic cable per connectar els equips.</p>
+<p><center><img alt="Topologia física en bus" src="../img/topologies/bus.png" width="%" /></center></p>
+<ul>
+<li><strong>Avantatges</strong>: baix cost per emprar poc cablejat.</li>
+<li><strong>Desavantatges</strong>: controlar les col·lisions. Xifrat per tal de mantenir la privacitat. Si falla un enllaç la xarxa deixa de funcionar completament.</li>
+</ul>
+<h4 id="malla">Malla</h4>
+<p>Interconnexió total de tots els nodes</p>
+<p><center><img alt="Topologia física en malla i malla totalment connexa" src="../img/topologies/malla.png" width="%" /></center></p>
+<ul>
+<li><strong>Avantatges</strong>: si una ruta falla es pot seleccionar altra alternativa.</li>
+<li><strong>Desavantatges</strong>: més costós perquè fa falta més cablejat.</li>
+</ul>
+<h4 id="estrela">Estrela</h4>
+<p>Connecta tots els cables amb un punt central de concentració. Per regla general es tracta d'un <em>Hub</em> o un <em>Switch</em>.</p>
+<p><center><img alt="Topologia física en estrela" src="../img/topologies/estrela.png" width="%" /></center></p>
+<ul>
+<li><strong>Avantatges</strong>: el node central realitza les tasques de distribució, conmutació i control per evitar col·lisions.</li>
+<li><strong>Desavantatges</strong>: si el node central falla es queda tota la xarxa inutilitzada.</li>
+</ul>
+<h4 id="arbre">Arbre</h4>
+<p>Es connecten tots els nodes de forma jerarquitzada. Molt emprat en xarxes de telefonia on els enllaços intermedis són centraletes locals i regionals.</p>
+<p><center><img alt="Topologia física en arbre" src="../img/topologies/arbre.png" width="%" /></center></p>
+<ul>
+<li><strong>Avantatges</strong>: cost bastant optimitzat.</li>
+<li><strong>Desavantatges</strong>: la fallada d'un node o enllaç deixa un conjunt de nodes incomunicats.</li>
+</ul>
+<h4 id="anell">Anell</h4>
+<p>Tots els nodes estan connectats a una única via amb els seus dos extrems units.</p>
+<p><center><img alt="Topologia física en anell" src="../img/topologies/anell.png" width="%" /></center></p>
+<ul>
+<li><strong>Avantatges</strong>: s'eviten col·lisions.</li>
+<li><strong>Desavantatges</strong>: si fall un enllaç, la xarxa deixa de funcionar completament.</li>
+</ul>
+<h4 id="mixta-o-irregular">Mixta o irregular</h4>
+<p>És el que s'empra a la vida real quan la xarxa té certa envergadura. Es mesclen diverses topologies.</p>
+<p><center><img alt="Topologia física mixta" src="../img/topologies/mixta.png" width="%" /></center></p>
+<ul>
+<li><strong>Avantatges</strong>: cada tram s'adapta a les seues característiques.</li>
+<li><strong>Desavantatges</strong>: major complexitat de gestió del trànsit.</li>
+</ul>
+<h3 id="topologia-logica">Topologia lògica</h3>
+<p>La topologia lògica de la xarxa descriu la forma en que els equips es comuniquen dintre de la xarxa i pot ser:</p>
+<ul>
+<li><strong>Topologia de bus lògic</strong>: cada equip envia les seues dades cap a tots els demés sense ningún tipus de filtre. Tots els nodes de la xarxa miren les dades que circulen per aquesta i decideixen si les dades són per a ells o no en funció de la adreça de destí.</li>
+<li><strong>Ús de testics (token)</strong>: el testic va passant entre els diferents equips de la xarxa. Si el dispositiu que té el testic en eixe moment vol transmetre dades a través de la xarxa pot fer-ho i en cas contrari passa el testic al següent node.</li>
+</ul>
+<h2 id="classificacio-de-xarxes">Classificació de xarxes</h2>
+<p>Les xarxes es poden classificar en funció de múltiples criteris:</p>
+<ul>
+<li>Extensió (localització geogràfica).</li>
+<li>La tecnologia de tranmissió.</li>
+<li>El nivell d'accés o seguretat.</li>
+</ul>
+<h3 id="extensio-localitzacio-geoografica">Extensió (localització geoogràfica)</h3>
+<ul>
+<li><strong>Xarxes d'àrea local (LAN)</strong>:<ul>
+<li>Una xarxa d'àea local té una <strong><em>reduïda extensió</em></strong> limitada, la seua tecnologia de transmissió sol ser difussió. La velocitat està entre els 10 a 1000Mbps. Les xarxes d'àrea local més exteses són <em>Ethernet</em> i <em>Token Ring</em>.</li>
+<li>Solen tenir un retard molt baix a les transmissions i una taxa d'errors molt baixa. Solen ser xarxes privades i administrades per els seus propietaris.</li>
+</ul>
+</li>
+<li><strong>Xarxes d'àrea metropolitana (MAN)</strong>:<ul>
+<li>No superen una distància d'unes desenes de KM. En esència les MAN són una extensió de les LAN i com a tal empren tecnologies semblants. Les xarxes MAN de vegades s'empren per a interconnexió de xarxes LAN ubicades en diferents recintes geogràfics.</li>
+</ul>
+</li>
+<li><strong>Xarxes d'àrea extesa (WAN)</strong>:<ul>
+<li>S'empren sobre grans espais geogràfics, Poden cobrir distàncies de fins a milers de KM. Solen ser públiques i administrades per organismes o empreses nacionals. Gestionen taxes d'error altes. Les variants tecnològiques de les WAN són nombroses encara que es poden destacar aquelles basades en RDSI, FDDI, ATM FRAMERELAY.</li>
+</ul>
+</li>
+<li><strong>Xarxes d'àrea personal (PAN)</strong>:<ul>
+<li>Són xarxes amb una extensió d'uns pocs metres i interconnecten uns pocs equips (habitualment una habitació). Presenten una <strong>configuració senzilla o automàtica</strong>, <strong>baix cost</strong> i <strong>actualment solen ser sense fil</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="tecnologia-de-transmissio">Tecnologia de transmissió</h3>
+<ul>
+<li>Xarxes de difussió (broadcast o multipunt)</li>
+<li>Xarxes conmutades (punt a punt)<ul>
+<li>Conmutació de circuits</li>
+<li>Conmutació de paquets</li>
+</ul>
+</li>
+</ul>
+<h4 id="xarxes-de-difussio-broadcast-o-multipunt">Xarxes de difussió (broadcast o multipunt)</h4>
+<ul>
+<li>
+<p>El <strong>canal de transmissió és compartit</strong> per tots els equips de la xarxa. Normalment, cada missatge transmés té un únic destinatari, l'adreça del qual apareix al missatge, però per conèixer si l'escollit és ell, cada equip de la xarxa ha d'escoltar cada missatge, analitzar l'adreça destí i comprovar si coincideix amb la pròpia, descartant-lo en cas contrari.</p>
+</li>
+<li>
+<p>Evidentment aquesta forma de treball provoca <strong>problemes de privadesa</strong>. L'única protecció efectiva a les xarxes de difussió és el xifrat de la informació. Aquest tipus de línies s'empren en xarxes menudes geogràficament localitzades. És important establir un mecanisme per evitar col·lisions.</p>
+</li>
+</ul>
+<h4 id="xarxes-conmutades-punt-a-punt">Xarxes conmutades (punt a punt)</h4>
+<ul>
+<li><strong>Conmutació de circuits</strong>: consisteix en establir un <strong>circuit físic diferenciat</strong> de la resta entre emissor i receptor en cada procés de comunicació. Aquest tipus de conmutació és el que es produeix quan dues persones parlen per telèfon.</li>
+<li><strong>Conmutació de paquets</strong>: es basa en l'<strong>ús d'un conjunt de nodes</strong> que s'encarreguen de l'emmagatzematge temporal i reenviament de la informació que reben d'altres nodes, L'usuari al transmetre, envia un bloc de dades denominat paquet. Aquest bloc té un format definit que recull, entre d'altres, qui és el destinatari de la informació. Una vegada dipositat a la xarxa, cada paquet és enviat d'un node a altre fins que aplega al seu punt de destí. La ruta per arribar al destí <strong>no té perquè ser la mateixa per a tots els paquets</strong>.</li>
+</ul>
+<h3 id="nivell-dacces-o-seguretat">Nivell d'accés o seguretat</h3>
+<ul>
+<li><strong>Internet</strong>: mètode d'interconnexió descentralitzada de xarxes d'equips implementat en un conjunt de protocols denominat TCP/IP i garanteix que les xarxes físiques heterogènies funcionen com una xarxa lògica única, d'alcaç mundial.</li>
+<li><strong>Intranet</strong>: és tracta d'una xarxa dintre d'altra xarxa local (LAN) privada, empresarial o educativa que proporciona Internet.</li>
+<li><strong>Extranet</strong>: xarxa privada virtual (VPN) que empra protocols d'Internet, de comunicació i probablement infraestructura pública de comunicació per tal de compartir de manera segura part de la informació o operació pròpia d'una organització amb proveïdors, compradors, socis, clients o qualsevol altre negoci o organització.</li>
+</ul>
+<h2 id="elements-de-la-xarxa">Elements de la xarxa</h2>
+<p>A una xarxa podem distingir els següents elements:</p>
+<ul>
+<li>El sistema de cablejat i radioelèctric.</li>
+<li>Dispositius de xarxa</li>
+<li>Nodes de xarxa</li>
+<li>Software de xarxa</li>
+</ul>
+<h3 id="sistema-de-cablejat-i-radiolectric">Sistema de cablejat i radiolèctric</h3>
+<p>Condueixen la senyal per transportar la informació. El sistema de cablejat està format pel cable (normalment coure o fibra òptica) i els seus connectors. Cada tipus de cablejat porta el seu propi sistema de connectorització.</p>
+<h3 id="els-dispositius-de-xarxa">Els dispositius de xarxa</h3>
+<p>Interconnecten màquines i serveis. Poden ser mòdems, routers, proxies, repetidors...</p>
+<p><center><img alt="Diferents dispositius de xarxa" src="../img/components_xarxa.png" width="66%" /></center></p>
+<h3 id="nodes-de-la-xarxa">Nodes de la xarxa</h3>
+<p>Els nodes poden estar connectats a la xarxa mitjançant cable o sense fil. Cada node requerirà al menys d'una interfícies de xarxa per poder connectar-se al cable o antena.</p>
+<h3 id="software-de-xarxa">Software de xarxa</h3>
+<ul>
+<li>Aplicacions: gestors de xarxa (aplicacions que empren els diferents nivells de xarxa), els recopiladors d'estadístiques, analitzadors de congestió.</li>
+<li>Sistemes operatius.</li>
+</ul>
+<h2 id="arquitectura-de-la-xarxa">Arquitectura de la xarxa</h2>
+<p>De igual forma que els sistemes operatius s'encarreguen de gestionar eficientment els recursos d'un equip, el software de xarxa realitza la mateixa tasca de cara als recursos físics de la xarxa (hardware).</p>
+<p>Les xarxes de comunicacions han de poder resoldre problemes d'adreçament, accés al medi, sincronització, format dels missatges, encaminament, control de fluxe, control d'errors i multiplexació.</p>
+<h3 id="adrecament">Adreçament</h3>
+<p>Una xarxa té múltiples equips i és necessari que cada equip tinga una <strong>adreça diferenciada</strong> a la xarxa. Al mateix temps, cada equip pot tenir diversos processor en marxa... Es necessita un mecanisme per tal que un procés d'un equip especifique amb quin procés (<strong>port</strong>) d'altre equip vol connectar-se.</p>
+<h3 id="encaminament">Encaminament</h3>
+<p>Si la xarxa permet arribar a un destí per diverses rutes, es necessita un mecanisme que determine quina és la millor ruta en un moment donat.</p>
+<h3 id="acces-al-medi">Accés al medi</h3>
+<p>Si existeix un mecanisme de comunicació de difussió, ha d'existir un mecanisme per controlar l'ordre de transmissió i evitar col·lisions.</p>
+<h3 id="control-de-fluxe">Control de fluxe</h3>
+<p>Un emissor molt ràpid pot saturar/desbordar a un receptor. Hem de contar amb un mecanisme per controlar aquest fluxe.</p>
+<h3 id="sincronitzacio">Sincronització</h3>
+<p>El receptor ha de poder determinar quan una senyal comença a arribar i quan acabe, així com la durada de cada element de la senyal. En algunes xarxes, les dades arriben desordenades. Hem de contar amb un mecanisme que permeta reordenar les dades en el destí.</p>
+<h3 id="control-derrors">Control d'errors</h3>
+<p>A totes les xarxes de comunicacions quen transmetem hi ha un xicotet percentatge d'errors. Hem de contar amb mecanismes que permeten la seua <strong>detecció</strong> i <strong>correcció</strong>.</p>
+<h3 id="format-dels-missatges">Format dels missatges</h3>
+<p>Ambdues parts han d'estar d'acord amb el format de les dades que es transmeten.</p>
+<h3 id="multiplexacio">Multiplexació</h3>
+<p>Si compartim un medi de transmissió, hem d'assegurar que si hi han més d'una comunicació al mateix temps que no s'interferisquen.</p>
+<h3 id="arquitectura-per-capes">Arquitectura per capes</h3>
+<p><center><img alt="Xarxa per capes" src="../img/capes/xarxa_capes.jpg" width="66%" /></center></p>
+<p>És molt més senzill descomposar els problemes de la xarxa si la organitzem en <strong>capes o nivells</strong> i que cada capa s'encarregue d'una funcionalitat.</p>
+<p><strong>Cada capa ofereix uns serveis a les capes superiors</strong>, alliberant-les de coneixement detallat de com es realitzen aqueixos serveis.</p>
+<p>Al mateix temps, <strong>la capa <em>n</em> en una màquina conversa amb la capa <em>n</em> de l'altra màquina</strong>.</p>
+<p>Les regles i convencions emprades en aquesta cnversació es coneixen conjuntament com <strong>protocol de la capa <em>n</em></strong>.</p>
+<p>Quan un sistema vol enviar un missatge a altre, la informació ha de "baixar" fins al medi físic i a través d'aquest arribar al sistema remot. Conforme va descendint es produeixen transformacions, per exemple, addició de camps de capçalera, fragmentació de paquets en altres més menuts... Totes aquestes transformacions són reversibles i en el sistema remot es realitzen en sentit invers fins que un missatge igual que l'original és depositat al nivell de destí.</p>
+<p><center><img alt="Addició de camps en un sistema per capes" src="../img/capes/xarxa_capes_2.jpg" width="66%" /></center></p>
+<p>Entre cada parell de capes adjacents hi ha una interfície, <strong>que defineix els serveis i operacions primitives que la capa inferior ofereix a la superior</strong>. El disseny clar i net d'una interfície, a més a més de minimitzar la quantitat d'informació que deu passar-se entre capes, fa més simple la substitució d'una capa per altra completament diferent.</p>
+<p><center><img alt="Interfície entre capes" src="../img/capes/interficie_capes.jpg" width="66%" /></center></p>
+<h4 id="el-model-iso-osi">El model ISO-OSI</h4>
+<div class="admonition info">
+<p class="admonition-title">Un model de referència</p>
+<p>Al 1977, la Organització Internacional de Normes (<em>ISO, International Standard Organization</em>) va crear un subcomité per desenvolupar estàndards de comunicació de dades que permeteren la interoperabilitat entre productes de distints fabricants. Despés de diverses investigacions van elaborar un model de referencia OSI (<em>Open System Interconection</em>).</p>
+<p><strong>OSI</strong> no és realment una arquitectura de xarxa, sino un <strong>model de referència</strong>, és a dir, un model teòric que <strong>cimenta les bases</strong> del que hauria de ser la "arquitectura de xarxa ideal", però és massa purista i aparegué tard.</p>
+</div>
+<p>El model proposat per OSI està estructurat en <strong>7 capes</strong> o nivells, casadcun d'ells s'encarrega d'oferir una sèrie de serveis a la capa superior i de tornar resultats a la capa inferior.</p>
+<p><center><img alt="Esquema del model OSI" src="../img/capes/osi-1.png" width="66%" /></center></p>
+<p><center><img alt="Altre esquema del model OSI" src="../img/capes/osi-2.png" width="66%" /></center></p>
+<h5 id="nivell-fisic-i">Nivell físic (I)</h5>
+<p>La capa física s'encarrega de definir les característiques <strong>mecàniques, elèctriques, funcionales i de procediment</strong> per poder establir i alliberar connexions entre dos equips de xarxa.</p>
+<p>És la capa de nivell més baix, s'encarrega de les <strong>tranmissions dels bits</strong> i defineix paràmetres com: durada dels polsos elèctrics, nombre de Volts (V) de la senyal, la modulació, el tipus de cablejat...</p>
+<h5 id="nivell-denllac-ii">Nivell d'enllaç (II)</h5>
+<p>La tasca principal d'aquesta capa és <strong>establir una línia de comunicació lliure d'errors</strong> que puga ser emprada per la capa inmediatament superior (xarxa).</p>
+<p>Hem vist que el nivell físic opera amb bits. La capa d'enllaç s'encarrega de <strong>fraccionar el missatge</strong> en blocs de dades de nivell 2 anomenats <strong>trames o frames</strong>.</p>
+<p>L'emissor envia les trames en seqüència per la línia de transmissió i espera les trames de confirmació que generarà la capa d'enllaç del receptor.</p>
+<p>Altra funció de la capa d'enllaç és <strong>assegurar el fluxe de dades entre emissors ràpids i receptors lents</strong> o al revés.</p>
+<p>A més a més, també s'ocuparà dels <strong>errors</strong> que es produisquen (eliminar trames defectuoses, solicitar retransmissió, descartar duplicades...).</p>
+<h5 id="nivell-de-xarxa-iii">Nivell de xarxa (III)</h5>
+<p>La principal funció de la capa 3 és l'<strong>encaminament</strong>, és a dir, com escollir la ruta més adequada perquè el bloc de dades de nivell de xarxa, anomenat <strong>paquet</strong>, arribe al seu destí. Cada destí està identificat unequívocament a la subxarxa per una <strong>adreça</strong>.</p>
+<p>Altra funció important és la del tractament de la <strong>congestió</strong>. Quan hi ha sobrecàrrega de paquets a la xarxa, s'obstrueixen uns a altres generant colls de botella als punts més sensibles. Un bon sistema de gestió de xarxa evitarà o paliarà aquests problemes de congestió desviant paquets cap a altres rutes inicialment no previstes.</p>
+<h5 id="nivell-de-transport-iv">Nivell de transport (IV)</h5>
+<p>Capa de transició entre els nivells de xarxa i els nivells orientats a les aplicacions (5, 6 i 7).</p>
+<p>Els paquets poden haver prés rutes distintes i arribar als seus destins <strong>desordenats</strong>. És funcio de la capa de transport del receptor <strong>assegurar que les dades són les mateixes que envià la capa de transport de l'emissor</strong>, és a dir, no s'han produït <strong>errors</strong> i <strong>ordenar-los</strong> en el cas que arriben desordenats.</p>
+<h5 id="nivell-de-sessio-v">Nivell de sessió (V)</h5>
+<p>Permet el <strong>diàleg</strong> entre emissor i receptor <strong>establint una sessió</strong> que portarà un transport de dades ordinari (capa de transport) però <strong>amb possibilitat de restaurar-la</strong> en cas que es produisquen errors a la tranmissió.</p>
+<p>Un exemple típic és la descàrrega d'un fitxer que es talla poc abans de finalitzar. Si a l'inici de la descàrrega s'establí una sessió, podrà ser resincronitzada, de tal manera que a la següent connexió es transmeten dades a partir de l'últim bloc transmés sense error.</p>
+<h5 id="nivell-de-presentacio-vi">Nivell de presentació (VI)</h5>
+<p>Aquesta capa <strong>s'ocupa de la sintaxi i de la semàntica</strong> de la informació que es preten transmetre, és a dir, <strong>investiga el contingut informatiu de les dades perquè emissor i receptor puguen "entendre's"</strong>.</p>
+<p>Per exemple: suposem una transmissió de text entre un emissor que empra codificació ASCII per a la representació d'informació alfanumérica i un receptor que empra codificació EBCDIC. Si les dades son enviades i prou, el receptor no serà capaç d'imyterpretar-les perquè estan "parlant llenguates distints". Necessiten un servei de conversió i interpretació que és el que fa la capa de presentació.</p>
+<p>Altra funció de la capa de presentació pot er la de <strong>comprimir i/o encriptar les dades</strong>.</p>
+<h5 id="nivell-daplicacio-vii">Nivell d'aplicació (VII)</h5>
+<p>És la capa superior de la jerarquia i és la capa amb la qual es comuniquen les aplicacions.</p>
+<p>S'encarrega d'oferir una <strong>inferfície comú a través de la qual es comunicaran les aplicacions</strong>, sense tenir en compte si l'aplicació orige i la aplicació destí estan a la mateixa màquina o en màquines diferents.</p>
+<p><center><img alt="Model ISO-OSI i protocols de les capes" src="../img/capes/osi-3.png" width="66%" /></center></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna a l'inici
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Peu de pàgina" >
+        
+          
+          <a href="../SMX1-XAL-PRG/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: P. Didàctica">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                P. Didàctica
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../SMX1-XAL-1-Act/" class="md-footer__link md-footer__link--next" aria-label="Següent: Activitats UD1">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Següent
+              </span>
+              <div class="md-ellipsis">
+                Activitats UD1
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Apunts XAL - 1SMX by JASB (origin from P. Galera) es troba sota llicència CC BY-NC-SA 4.0 - <a href="#__consent">Canvia la configuració de les cookies</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:ja.sanchezbonache@edu.gva.es" target="_blank" rel="noopener" title="Contacte" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+
+<h4>Consentiment de Cookies</h4>
+<p>Utilitzem cookies per reconèixer les vostres visites i preferències repetides, així com per mesurar l'eficàcia de la nostra documentació i si els usuaris troben el que estan cercant. Amb el vostre consentiment, ens esteu ajudant a millorar la nostra documentació.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accepta</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestiona la configuració</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.footer", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

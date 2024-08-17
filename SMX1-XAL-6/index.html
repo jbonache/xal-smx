@@ -1,0 +1,1357 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="José A. Sánchez">
+      
+      
+        <link rel="canonical" href="https://jbonache.github.io/xal-smx/SMX1-XAL-6/">
+      
+      
+        <link rel="prev" href="../SMX1-XAL-5/">
+      
+      
+      
+      <link rel="icon" href="../img/logojaume.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>UD6. Escenaris de xarxes - Xarxes Area Local</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-GJ8MB56SLW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-GJ8MB56SLW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-GJ8MB56SLW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="UD6. Escenaris de xarxes - Xarxes Area Local" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-6.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://jbonache.github.io/xal-smx/SMX1-XAL-6/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="UD6. Escenaris de xarxes - Xarxes Area Local" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-6.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ud6-escenaris-de-xarxes" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href=".." title="Xarxes Area Local" class="md-header__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xarxes Area Local
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD6. Escenaris de xarxes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode oscur"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode oscur" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode clar"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clar" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Xarxes Area Local" class="md-nav__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    Xarxes Area Local
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-PRG/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P. Didàctica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Unitat 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Unitat 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teoria UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1-Act/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitats UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unitat 6
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 6
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuracio-de-la-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuració de la xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuració de la xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nom-de-lequip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nom de l'equip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adreca-ip-mascara-mac-i-adreca-de-broadcast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreça IP, Màscara, MAC i Adreça de broadcast
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porta-denllac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Porta d'enllaç
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servidors-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servidors DNS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informacio-del-driver-i-de-la-connexio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informació del driver i de la connexió
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conexions-sense-fils" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conexions sense fils
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-de-velocitat-de-la-xarxa-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test de velocitat de la xarxa local
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adaptadors-de-xarxa-en-virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adaptadors de xarxa en VirtualBox
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adaptadors de xarxa en VirtualBox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nat-en-virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAT en VirtualBox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xarxa-nat-en-virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Xarxa NAT en VirtualBox
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Xarxa NAT en VirtualBox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacio-duna-xarxa-nat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creació d'una xarxa NAT
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adaptador-pont-en-virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adaptador pont en VirtualBox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xarxa-interna" class="md-nav__link">
+    <span class="md-ellipsis">
+      Xarxa interna
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adaptador-sols-amfitrio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adaptador sols-amfitrió
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#netplan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Netplan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Netplan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-targeta-de-xarxa-per-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar targeta de xarxa per DHCP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-targeta-de-xarxa-amb-ip-fixa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar targeta de xarxa amb IP fixa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicar-les-configuracions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicar les configuracions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuracio-de-la-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuració de la xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuració de la xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nom-de-lequip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nom de l'equip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adreca-ip-mascara-mac-i-adreca-de-broadcast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adreça IP, Màscara, MAC i Adreça de broadcast
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porta-denllac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Porta d'enllaç
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servidors-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servidors DNS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informacio-del-driver-i-de-la-connexio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informació del driver i de la connexió
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conexions-sense-fils" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conexions sense fils
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-de-velocitat-de-la-xarxa-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test de velocitat de la xarxa local
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adaptadors-de-xarxa-en-virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adaptadors de xarxa en VirtualBox
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adaptadors de xarxa en VirtualBox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nat-en-virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAT en VirtualBox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xarxa-nat-en-virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Xarxa NAT en VirtualBox
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Xarxa NAT en VirtualBox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacio-duna-xarxa-nat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creació d'una xarxa NAT
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adaptador-pont-en-virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adaptador pont en VirtualBox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xarxa-interna" class="md-nav__link">
+    <span class="md-ellipsis">
+      Xarxa interna
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adaptador-sols-amfitrio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adaptador sols-amfitrió
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#netplan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Netplan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Netplan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-targeta-de-xarxa-per-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar targeta de xarxa per DHCP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-targeta-de-xarxa-amb-ip-fixa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar targeta de xarxa amb IP fixa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicar-les-configuracions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicar les configuracions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ud6-escenaris-de-xarxes">UD6. Escenaris de xarxes</h1>
+<h2 id="configuracio-de-la-xarxa">Configuració de la xarxa</h2>
+<p>Anem a veure comandes de terminal que existeixen per poder comprovar la nostra configuració de la xarxa i com modificar alguns paràmetres:</p>
+<ul>
+<li><em>Hostname</em> o nom de l'equip</li>
+<li>Adreça MAC</li>
+<li>Adreça IP, màscara de xarxa, adreça de xarxa i adreça de <em>broadcast</em></li>
+<li><em>Gateway</em> o porta d'enllaç</li>
+<li>Servidor DNS</li>
+<li>Propietats d'una connexió de xarxa</li>
+</ul>
+<h3 id="nom-de-lequip">Nom de l'equip</h3>
+<p>El <strong>hostname</strong> d'un equip és el nom que s'assigna a aquest dispositiu dins d'una xarxa i algunes de les seues funcions son:</p>
+<ol>
+<li>
+<p><strong>Identificació de l'equip</strong>: El <strong>hostname</strong> és una etiqueta única que permet identificar un ordinador o dispositiu en una xarxa. És com el nom propi de l'equip dins del context de la xarxa.</p>
+</li>
+<li>
+<p><strong>Resolució de noms</strong>: Quan es realitza una comunicació a través de la xarxa, els dispositius utilitzen adreces IP per trobar-se. El <strong>hostname</strong> es tradueix a una adreça IP mitjançant el <strong>DNS (Domain Name System)</strong>. Això permet que els usuaris puguin accedir als recursos de xarxa utilitzant noms amigables en lloc d'adreces IP numèriques.</p>
+</li>
+<li>
+<p><strong>Configuració de serveis</strong>: El <strong>hostname</strong> també es fa servir per configurar serveis i aplicacions en un servidor. Per exemple, quan configures un servidor web, pots associar un <strong>hostname</strong> (com "www.example.com") a una determinada carpeta o aplicació web.</p>
+</li>
+</ol>
+<p>En resum, el <strong>hostname</strong> és una etiqueta que identifica un equip a la xarxa i facilita la comunicació entre els dispositius mitjançant noms amigables.</p>
+<p><center><img alt="Comandament hostname" src="../img/comandes/hostname.png" /></center></p>
+<h3 id="adreca-ip-mascara-mac-i-adreca-de-broadcast">Adreça IP, Màscara, MAC i Adreça de broadcast</h3>
+<p>El comandament que emprarem en sistemes Linux per obtindre informació rellevant de la xarxa és <code>ip a</code>. Amb aquest comandament obtindrem: adreça IP i màscara en format curt (etiqueta <em>inet</em>), Adreça MAC (etiqueta <em>link/ether</em>) i adreça de broadcast (etiqueta <em>brd</em>) de cadascun dels adaptadors de xarxa que tinguem instal·lats. L'adreça de la xarxa no ens la mostra, però com em vist en unitats anteriors, la podem obtindre realitzant l'operació <strong>IP AND Màscara</strong>.</p>
+<p>A sistemes Windows, el comandament equivalent és <code>ìpconfig /all</code>.</p>
+<p><center><img alt="Comandament ip a" src="../img/comandes/ip-a.png" /></center></p>
+<h3 id="porta-denllac">Porta d'enllaç</h3>
+<p>En Linux, la <strong>porta d'enllaç</strong> o <strong>gateway</strong> s'obtenen gràcies al comandament <code>ip r</code>. La linia que indica la porta d'enllaç és la que està etiquetada com a <em>default</em>.</p>
+<p>En sistemes windows, la porta d'enllaç ve indicada també amb el comandament <code>ipconfig /all</code>.</p>
+<p><center><img alt="Comandament ip r" src="../img/comandes/ip-r.png" /></center></p>
+<h3 id="servidors-dns">Servidors DNS</h3>
+<p>Per obtindre informació referent als servidors DNS configurats en sistemes Linux, haurem de consultar un fitxer mitjançant el comandament <code>cat /etc/resolv.conf</code>. Si al fitxer ens diu que el nameserver és el 127.0.0.X significa que <em>NetworkManager</em> està configurat per iniciar una instància de la aplicació <em>dnsmasq</em> que és un servei local de reenviament de servidor de noms. Podem llavors, obtindre més infomació amb el comandament <code>resolvectl status</code>.</p>
+<p>Novament, a sistemes Windows, aquesta informació ens la donarà el comandament <code>ìpconfig /all</code>.</p>
+<h3 id="informacio-del-driver-i-de-la-connexio">Informació del driver i de la connexió</h3>
+<p>A sistemes Linux, aquesta informació l'obtenim amb el comandament <code>ethtool</code>:</p>
+<ul>
+<li><strong>Informacicó del driver</strong>: <code>ethtool -i &lt;adaptador_xarxa&gt;</code></li>
+<li><strong>Informació de la connexió</strong>: <code>ethtool &lt;adaptador_xarxa&gt;</code></li>
+</ul>
+<h3 id="conexions-sense-fils">Conexions sense fils</h3>
+<p>A sistemes Linux, emprarem el camndament <code>iwlist scan</code>per veure informació extra, el comandament <code>iwconfig</code>. Sols mostrarà informació d'aquells adapatdors sense fils presents al sistema, evidentment.</p>
+<h2 id="test-de-velocitat-de-la-xarxa-local">Test de velocitat de la xarxa local</h2>
+<p><strong><em>IPERF</em></strong> és una ferramenta que s'utilitza per fer proves de velocitat en xarxes. <em>Iperf</em> crea fluxes de dades TCP i/o UDP i realitza un informe amb marques de temps amb la quantitat de dades transmeses i el rendiment mig. Açò pot ser d'utilitat per <strong>comparar la velocitat de les tomes d'equips de xarxa cablejats i sense fils</strong> de forma imparcial.</p>
+<p>Es tracta de <em>software</em> de codi obert i pot executar-se en diverses plataformes incloent Linux, Unix i Windows. Per instalar-lo en sistemes Debian (Ubuntu) hem d'executar <code>sudo apt install iperf</code>.</p>
+<p><em>Iperf</em> pot funcionar com a <strong>client (-c)</strong> o com a <strong>servidor (-s)</strong> i pot mesurar el rendiment entre els dos extrems de la comunicació , unidireccional o bidireccionalment. Quan l'executem com a client (-c) hem d'afegir també l'adreça IP de l'equip que actua com a servidor (-s).</p>
+<p><a href="https://iperf.fr/">Pàgina web del software Iperf</a></p>
+<p><center><img alt="iperf en execució" src="../img/comandes/iperf.png" /></center></p>
+<h2 id="adaptadors-de-xarxa-en-virtualbox">Adaptadors de xarxa en VirtualBox</h2>
+<p>Una màquina virtual (MV) en VirtualBox (VB) pot tenir fins a <strong>8 targetes de xarxa PCI Ethernet</strong>, i cadascuna d'elles, de manera independent, pot tenir assignat el tipus de hardware a virtualitzar i <strong>el seu propi mode de configuració</strong>. Des de l'administrador de VB es poden configurar 4 de les 8 targetes de xarxa, si ens feren falta més, hauriem de configurar-les per terminal mitjançant el programa <strong><em>VBoxManage</em></strong>.</p>
+<p>Per tal de configurar la xarxa del sistema virtualitzat, haurem de seleccionar la MV a la pantalla principal del VB i entrar en "Configuració" --&gt; "Xarxa".</p>
+<p><center><img alt="Configuració de la xarxa en VB" src="../img/vbox/vbox-xarxa.png" width="75%" /></center></p>
+<p>Mitjançant el desplegable "Connectat a:" tindrem, en general, les següents opcions:</p>
+<ul>
+<li><strong>NAT</strong></li>
+<li><strong>Xarxa NAT</strong></li>
+<li><strong>Adaptador pont</strong></li>
+<li><strong>Adaptador sols-amfitrió</strong></li>
+<li><strong>Xarxa interna</strong></li>
+<li><strong>No connectat</strong></li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Per a què serveix el protocol NAT?</p>
+<p><strong>NAT</strong> és un protocol que fou creat per traduir les IPs privades de la xarxa en una IP pública perquè la xarxa poguera enviar paquets a l'exterior; i traduir després eixa IP pública, de nou a la IP privada de l'equip que havia enviat el paquet, per tal que poguera rebre'l una vegada arribada la resposta.</p>
+<p><center><img alt="Esquema de NAT" src="../img/vbox/nat.png" width="66%" /></center></p>
+</div>
+<h3 id="nat-en-virtualbox">NAT en VirtualBox</h3>
+<p>A VB és el <strong>mode per defecte</strong> de la targeta de xarxa virtual. Amb aquesta opció el servei virtualitzat utilitza la targeta de xarxa de la <strong><em>màquina real (amfitrió)</em></strong> per navegar. En mode NAT, VB col·loca un <strong><em>router entre l'amfitrió (cap on fa NAT) i la màquina virtual</em></strong>.</p>
+<p>Aquest router poseeix un servidor DHCP que serveix cap a l'interior i mapeja el tràfic des de i cap a la MV de manera transparent. D'aquesta forma, si tenim configurat el client DHCP en el SO de la MV (opció habitualment per defecte), <strong>en mode NAT tindrem Internet automàticament a la MV</strong>.</p>
+<p><strong>Cada MV en mode NAT</strong> tindrà el seu propi router, per la qual cosa <strong>estaran en xarxes aïllades</strong>, el que implica que, per defecte, les MMVV que tenen la seua targeta en mode NAT <strong>no poden veure's entre elles</strong>.</p>
+<p>L'adreça que el router (intern) serveix (DHCP) va a dependre del número de targeta de xarxa que estiga assignat en mode NAT. Les 8 targetes de xarxa que VB permet a cada MV van numerades del 0 al 7 i les adreces de xarxa dels routers segueixen el patró <strong>10.0.[x + 2].0/24</strong>, on x és el número de la targeta de xarxa (10.0.2.0/24, 10.0.3.0/24, ... , 10.0.9.0/24 ). L'adreça IP de la targeta de xarxa serà 10.0.x+2.<strong>15</strong>/24 i la porta d'enllaç (router intern) 10.0.x+2.<strong>2</strong>/24.</p>
+<details class="tip">
+<summary>Canvi d'adreçament NAT en VirtualBox</summary>
+<p>Pot ser interessant <strong>canviar la numeració</strong> motivats per el problema que estiguem resolent en un moment donat, i per fer-ho és necessari recòrrer al comandament <strong><em>VBoxManage</em></strong> de la següent forma:</p>
+<p><code>VBoxManage modifyvm "Nom_de_la_MV" --natnet1 192.168.0.0/16</code></p>
+<p>Amb l'ordre anterior, l'adaptador de xarxa número 0 (--natnet1) de la MV "Nom_de_la_MV" pendrà l'adreça de xarxa 192.168.0.15/16 i la porta d'enllaç 192.168.0.2/16.</p>
+</details>
+<p>Un <strong>desavantatge</strong> d'aquest mode, com hem vist, és que <strong>la MV és invisible i inalcaçable fora de la seua xarxa</strong> i per tant, <strong>no podem instal·lar un servidor d'aquesta manera, a no ser que configurem el reenviament de ports</strong>. La qual cosa no està mal des del punt de vista de la seguretat.</p>
+<details class="tip">
+<summary>Reenviament de ports en xarxa NAT de VirtualBox</summary>
+<p>Si per exemple, a la MV col·loquem un servidor SSH i volem que les peticions SSH al port 2222 de l'amfitrió passen al port 22 del convidat (MV), on està el servidor SSH, redireccionarem els ports de la següent forma:</p>
+<p><code>VBoxManage modifyvm "Nom_de_la_MV" --natpf1 "servidorSSH, tcp,, 2222,, 22"</code></p>
+<p>Al posar <strong><em>--natpf1</em></strong>, estem dient que l'adaptador de xarxa 0 està en mode NAT i per ell rebrà les peticions el servidor SSH</p>
+<p>El nom <strong><em>servidorSSH</em></strong> és u nnom simbòlic que emprarem per gestionar aquesta redirecció, per exemple, si volem eliminar-la:</p>
+<p><code>VBoxManage modifyvm "Nom_de_la_MV" --natpf1 delete servidorSSH</code></p>
+<p>En una redirecció on hem d'especificar les IPs, per exemple, <strong>l'amfitrió té varies targetes i el convidatl'hem configurat de forma estàtica</strong>* (a pesar que la targeta estiga en mode NAT i per tant es tinga un servidor DHCP), la IP de l'amfitrió va davant del port de l'amfitrió i la IP de convidat, davant del port del convidat:</p>
+<p><code>VBoxManage modifyvm "Nom_de_la_MV" --natpf1 "servidorSSH, tcp, 192.168.1.5, 2222, 10.0.2.50, 22"</code></p>
+<p>El redireccionament de ports es pot fer també de forma gràfica mitjançant la secció de "Xarxa de la MV".</p>
+<p><center><img alt="Reenviament de ports NAT de manera gràfica" src="../img/vbox/reenviament_ports_nat.png" width="100%" /></center></p>
+</details>
+<div class="admonition info">
+<p class="admonition-title">Per a què serveix el protocol DHCP?</p>
+<ul>
+<li>DHCP és un protocol que es <strong>configura en servidors</strong>.</li>
+<li>Un servidor té un <strong>llistat d'adreces IP dinàmiques i les va assignant</strong> als clients conforme aquestes van quedant lliures, sabent en tot moment qui ha estat en posessií d'eixes IP, quan de temps la ha tingut i qui se li ha assignat després.</li>
+<li>Així <strong>els clients d'un xarxa IP poden aconseguir els seus paràmetres de configuració automàticament</strong>.</li>
+<li>Aquest protocol es va publicar en octubre de 1993 i la seua implementació actual està en RFC 2131.</li>
+<li>Per a DHCPv6 es publica el RFC 331.</li>
+<li><strong>VirtualBox permet configurar el servei DHCP en diverses modalitats: NAT, Xarxa Nat, Xarxa sols-amfitrió</strong>.</li>
+</ul>
+</div>
+<h3 id="xarxa-nat-en-virtualbox">Xarxa NAT en VirtualBox</h3>
+<p>Funciona com el router de la nostra casa, és a dir, **els equips que estiguen dins de la mateixa Xarxa NAT podran comunicar-se entre ells, i esta és la diferència amb el mode NAT vist anteriorment, el qual sempre contruia una xarxa amb un únic equip i no de dicersos com ara és el cas.</p>
+<p><center><img alt="Esquema de xarxa NAT" src="../img/vbox/xarxa-NAT.png" width="66%" /></center></p>
+<h4 id="creacio-duna-xarxa-nat">Creació d'una xarxa NAT</h4>
+<p>Podem fer-ho de dues formes:</p>
+<ul>
+<li>Des de l'intèrpret de comandes escriure'm <code>VBoxManage natnetwork add --netname CASA --network 192.168.0.0/24</code>.</li>
+<li>Des del menú del VB (les imatges corresponen a la versió 6 de VB): "Fitxer --&gt; Preferències --&gt; Xarxa"</li>
+</ul>
+<p><center><img alt="xarxa NAT en entorn gràfic VB" src="../img/vbox/xarxa-NAT-gf.png" width="75%" /></center></p>
+<p>Des de l'entorn gràfic podrem, també, configurar el <strong>reenviament de ports</strong>.</p>
+<p>Podem <strong>llistar la informació de les xarxaes NAT</strong> disponibles i així comprovar els paràmetres que acabem de crear:</p>
+<p><code>VBoxManage list natnets</code></p>
+<p>Com podem veure, sols hi ha en aquest moment una única xarxa NAT anomenada <strong>CASA</strong> i podem destacar la següent informació:</p>
+<p><center><img alt="LListat de xarxes NAT al VB amb VBoxManage" src="../img/vbox/list-natnets.png" width="50%" /></center></p>
+<p>El <strong>servidor DHCP pot detindre's o activar-se</strong> de manera independent, amb els següents comandaments:</p>
+<p><code>VBoxManage natnetwork modify --netname CASA --dhcp off</code></p>
+<p><code>VBoxManage natnetwork modify --netname CASA --dhcp on</code></p>
+<p><strong>La xarxa NAT pot detindre's i seria com apagar el router</strong>, és a dir, la xarxa quedaria sense eixida a l'exterior encara que tindria connexió entre els equips connectats a la mateixa xarxa NAT:</p>
+<p><code>VBoxManage natnetwork stop --netname CASA</code></p>
+<p><code>VBoxManage natnetwork start --netname CASA</code></p>
+<p>Finalment, per <strong>eliminar la xarxa NAT</strong> executariem:</p>
+<p><code>VBoxManage natnetwork remove --netname CASA</code></p>
+<p>Aquestes opcions també <strong>poden fer-se des de l'entonr gràfic de VB</strong>.</p>
+<h3 id="adaptador-pont-en-virtualbox">Adaptador pont en VirtualBox</h3>
+<p>El mode "Adaptador pont" <strong>simula que la targeta virtual està connectada al mateix switch que la targeta física de l'amfitrió</strong>, per tant, la MV va a comportar-se com si fòs un equip més dins de la mateixa xarxa física en la que està l'equip amfitrió. Així doncs, si l'amfitrió obté una adreça IP per DHCP, el host també la conseguirà. L'esquema de xarxa seria el següent:</p>
+<p><center><img alt="Esquema de xarxa del mode pont" src="../img/vbox/esquema-pont.png" width="75%" /></center></p>
+<div class="admonition info">
+<p class="admonition-title">Com aconsegueix VB simular-ho?</p>
+<p>Un <strong>bridge</strong> afig un nivell d'inteligència a una connexió entre xarxes. Connecta dos segments de xarxes iguals o distints. Podem veure un <em>bridge</em> com un classificador de correu que mira les adreces dels paquets i els col·loca a la <strong>xarxa</strong> adequada.</p>
+</div>
+<h3 id="xarxa-interna">Xarxa interna</h3>
+<p>Amb aquesta configuració de targetes de xarxa, podem contruir xarxes aïllades, en les quals <strong>sols hi haurà communicació entre les MMVV que pertànyen a la mateixa xarxa interna</strong>.</p>
+<p><center><img alt="xarxa interna en VB" src="../img/vbox/xarxa-interna.png" width="50%" /></center></p>
+<p><strong>Per tal de connectar xarxes internes a l'exterior, haurem de crear MMVV que funcionen com <em>routers</em></strong> i disposen de dues targetes de xarxa, d'aquesta forma podrem contruir un camí cap a Internet. Aquesta màquina que funcionaria com a router, haurà de tindre alguna de les seues targetes en NAT o pont, per poder ixir físicament a l'<em>exterior</em>.</p>
+<p><center><img alt="xarxa interna en VB amb connexió a Internet" src="../img/vbox/xarxa-interna-amb-eixida.png" width="50%" /></center></p>
+<p>Les xarxes internes de VB s'identifiquen a trevés d'un nom i <strong>totes les MMVV que tinguen una targeta en mode xarxa interna amb el mateix nom formaran una única xarxa</strong>. El nom de la xarxa interna s'especifica després de triar el mode; si no s'especifica, s'emprarà la xarxa interna per defecte de VB, anomenada <strong><em>intnet</em></strong>.</p>
+<p><center><img alt="Configuració de xarxa interna en VB" src="../img/vbox/xarxa-interna-VB.png" width="75%" /></center></p>
+<h3 id="adaptador-sols-amfitrio">Adaptador sols-amfitrió</h3>
+<p>El mode "sols-amfitrió" s'empra per <strong>crear un xarxa interna a la que pertanyerà també l'equip amfitrió, cosa que no succeeix al mode "xarxa interna"</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Justificació</p>
+<p>La connexió directa en una mateixa xarxa, de l'amfitrió amb una o més MMVV, ha de fer-se emprant el "mode pont" el qual necessita per funcionar, que el cable físic de xarxa estiga connectat a la targeta de xarxa de l'amfitrió. En cas contrari, és com si estiguera apagat el switch que connecta a l'amfitrió amb les MMVV, i per tant, no existeix connexió entre elles, ni amb l'amfitrió. Si estiguéssem en una <strong>situació en la qual no tinguérem connexió de xarxa</strong>, no podriem treballa amb la configuració anterior; aquest <strong>problema el resol el mode <em>sols-amfitrió</em></strong>, doncs no empra la targeta física de la xarxa de l'amfitrió sino que es crea una virtual que estarà connectada al mateix switch virtual al que estaran connectades les targetes de xarxa de les MMVV amb el mateix mode de xarxa.</p>
+</div>
+<p>Per poder fer ús d'aquest mode, haurem de <strong>crear la targeta de xarxa virtual a l'equip amfitrió</strong>, per a tal cosa a l'administració de VB anirem a <strong><em>Fitxer -&gt; Administrador de xarxa-amfitrió</em></strong>.</p>
+<p><center><img alt="Configuració d'adaptadors de xarxa virtuals" src="../img/vbox/sols-amfitri%C3%B3.png" width="75%" /></center></p>
+<p>A partir d'aquest moment <strong>existeixen tantes targetes noves de xarxa com creem</strong>.</p>
+<p>Aquestes targetes hi ha que <strong>assignar-les una IP</strong> de la xarxa que hàgem triat, i açòes fa configurant els camps del recuadre situat en la part inferior de la finestra. Ho farem seleccionant previament vboxnet0:</p>
+<p><center><img alt="IP en sols-amfitrió" src="../img/vbox/ip-sols-amfitri%C3%B3.png" width="75%" /></center></p>
+<p>També podrem activar un servidor DHCP per evitar configurar manualment les targetes de xarxa de les MMVV que es connecten...</p>
+<details class="bug">
+<summary>Error E_ACCESSDENIED</summary>
+<p>Algunes de les activitats i pràctiques proposades necessiten de la modificació de les xarxes <strong><em>sols anfitrió</em></strong>, però podem trobar-nos davant errors al moment de configurar-ho com el següent:</p>
+<p><center><img alt="Error E_ACCESSDENIED" src="../img/vbox/error-accesdenied-vbox.png" width="75%" /></center></p>
+<p>Aquest error es deu a que a partir de la versió 6.1.28 van afegir unes noves configuracions, que entre altres coses acoten el rang vàlid de xarxes disponibles per a xarxes <strong><em>sols anfitrió</em></strong>.</p>
+<p>Açò desemboca en que sols s'accepten xarxes <strong><em>sols anfitrió</em></strong> en el rang 192.168.56.0/21.</p>
+<p>Per deshabilitar aquesta restricció, editarem el fitxer /etc/vbox/networks.conf (que pot no existir i haurem de crear-lo) i afegirem el rang</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>* 0.0.0.0/0 ::/0
+</code></pre></div></td></tr></table></div>
+<p>que bàsicament habilita totes les xarxes. D'aquesta forma podrem emprar qualsevol xarxa en mode <strong><em>sols anfitrió</em></strong>.</p>
+<p><center><img alt="Creació del fitxer /etc/vbox/networks.conf" src="../img/vbox/crear-networks.conf.png" width="75%" /></center></p>
+<p><center><img alt="Xarxes en sols anfitrió sense errors" src="../img/vbox/crear-networks.conf-2.png" width="75%" /></center></p>
+</details>
+<h2 id="netplan">Netplan</h2>
+<p>Amb l'arribada d' <strong>Ubuntu 18.04</strong> arribàren canvis a la configuració dels serveis de xarxa.</p>
+<p><center><img alt="Estructura netplan" src="../img/netplan/netplan.png" width="50%" /></center></p>
+<p>A les versions anteriors, tota la configuració es realitzava per interfície gràfica o mitjançant fitxers de configuració, situats en <strong>/etc/network</strong>. A partir d'ara, tindrem les dues opcions, però els fitxers de configuració es troben a <strong>/etc/netplan</strong> i tenen extensió <strong>yaml</strong>.</p>
+<p><center><img alt="Ruta dels fitxers de netplan" src="../img/netplan/netplan1.png" /></center></p>
+<p>Aquest fitxer és el que tindrem que modificar per tal d'aconseguir la configuració de xarxa que necessitem en cada cas.</p>
+<p><center><img alt="Configuració per defecte de netplan" src="../img/netplan/netplan2.png" /></center></p>
+<p>Aquesta és la configuració per defecte de la xarxa. Amb aquesta configuració és la interfície gràfica l'encarregada de controlar tots els dispositius de la xarxa. Aquesta opció s'estableix a la linia: <code>renderer: NetworkManager</code>.</p>
+<p>A la majoria dels casos amb aquesta configuració tindrem suficient però no tindrem control sobre els dispossitius de la xarxa.</p>
+<p>Per tal d'indicar que anem a ser nosaltres els qui definim el comportament i configuració de les interfícies de xarxa , haurem de modificar la linia anterior per: <code>renderer: networkd</code>.</p>
+<p>A partir d'aquest moment haurem d'especificar tota la informació necessària per al funcionament dels dispositius de xarxa.</p>
+<p>Anem a veure diferents exemples de configuracións de <strong>netplan</strong>, aquests exemples són bàsics però suficients per poder realitzar exercicis.</p>
+<div class="admonition warning">
+<p class="admonition-title">Informació</p>
+<p>Abans de veure els exemple, hi ha que tindre en compte que els fitxers en format <strong>yaml</strong> no acceptàven tabulacions al principi i per tal de realitzar les sangríes del text havíem d'emprar espais.</p>
+<p>A les versions més noves d'Ubuntu <strong>el fitxers yaml ja suporten la tabulació</strong>.</p>
+</div>
+<h3 id="configurar-targeta-de-xarxa-per-dhcp">Configurar targeta de xarxa per DHCP</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">network</span><span class="p">:</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nt">renderer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networkd</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="nt">ethernets</span><span class="p">:</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="nt">enp0s3</span><span class="p">:</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">      </span><span class="nt">dhcp4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yes</span>
+</code></pre></div></td></tr></table></div>
+<p>On podem veure:</p>
+<ul>
+<li><code>renderer: networkd</code> -- configurem nosaltres el dispositius de xarxa</li>
+<li><code>ethernets</code> -- interfícies de xarxa a aconfigurar</li>
+<li><code>enp0s3</code> -- nom de la interfície de xarxa a configurar</li>
+<li><code>dhcp4: yes</code> -- DHCP activat</li>
+</ul>
+<p>Aquest tipus de configuació la utilitzarem quan tinguem una targeta de xarxa sobre un adaptador de VirtualBox que accepte DHCP, és a dir, NAT, Xarxa NAT i Sols anfitrió.</p>
+<h3 id="configurar-targeta-de-xarxa-amb-ip-fixa">Configurar targeta de xarxa amb IP fixa</h3>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">network</span><span class="p">:</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">  </span><span class="nt">renderer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networkd</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">  </span><span class="nt">ethernets</span><span class="p">:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="nt">enp0s3</span><span class="p">:</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">      </span><span class="nt">addresses</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">10.0.2.10/24</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">      </span><span class="nt">nameservers</span><span class="p">:</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">        </span><span class="nt">addresses</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">8.8.8.8</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">8.8.4.4</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">      </span><span class="nt">routes</span><span class="p">:</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">to</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">          </span><span class="nt">via</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10.0.2.2</span>
+</code></pre></div></td></tr></table></div>
+A banda dels punts anteriors podem veure:</p>
+<ul>
+<li><code>addresses: [10.0.2.10/24]</code> -- adreça de xarxa en format CIDR</li>
+<li><code>nameservers:</code> -- a partir d'aquesta linia, configuració dels DNS.</li>
+<li><code>routes:</code> -- gestió d'enrutament local, per exemple: porta d'enllaç (to: default - via...)</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Gateway4 <em>deprecated</em></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span>
+<span class="normal"><a href="#__codelineno-3-8">8</a></span>
+<span class="normal"><a href="#__codelineno-3-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nt">network</span><span class="p">:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="nt">renderer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networkd</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">    </span><span class="nt">ethernets</span><span class="p">:</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">        </span><span class="nt">enp0s3</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">            </span><span class="nt">address</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">10.10.10.2/24</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">            </span><span class="nt">gateway4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10.10.10.1</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">            </span><span class="nt">nameservers</span><span class="p">:</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">                </span><span class="nt">addresses</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">8.8.8.8</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">8.8.4.4</span><span class="p p-Indicator">]</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<h3 id="aplicar-les-configuracions">Aplicar les configuracions</h3>
+<p>La modificació del fitxer ubicat en <strong>/etc/netplan/</strong> no implica que s'apliquen els canvis.  Cada vegada que modifiquem aquest fitxer <strong>yaml</strong> haurem de realitzar algunes accions:</p>
+<ul>
+<li><code>sudo netplan -debug try</code>: tracta d'aplicar la configuració que hem definit. Si no hi ha errades ixirà un contador per tornar a la configuració anterior o polsant <strong><em>ENTER</em></strong> aplicar la nova.</li>
+<li><code>sudo netplan apply</code>: aplica directament la configuració que hem definit. S'ha d'emprar en el cas d'estar completament segur que tot és correcte.</li>
+</ul>
+<p><center><img alt="Configuració sense errors a la espera de ser acceptada" src="../img/netplan/netplan_try.png" /></center></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna a l'inici
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Peu de pàgina" >
+        
+          
+          <a href="../SMX1-XAL-5/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Unitat 5">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Unitat 5
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Apunts XAL - 1SMX by JASB (origin from P. Galera) es troba sota llicència CC BY-NC-SA 4.0 - <a href="#__consent">Canvia la configuració de les cookies</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:ja.sanchezbonache@edu.gva.es" target="_blank" rel="noopener" title="Contacte" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+
+<h4>Consentiment de Cookies</h4>
+<p>Utilitzem cookies per reconèixer les vostres visites i preferències repetides, així com per mesurar l'eficàcia de la nostra documentació i si els usuaris troben el que estan cercant. Amb el vostre consentiment, ens esteu ajudant a millorar la nostra documentació.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accepta</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestiona la configuració</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.footer", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1772 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="José A. Sánchez">
+      
+      
+        <link rel="canonical" href="https://jbonache.github.io/xal-smx/SMX1-XAL-3/">
+      
+      
+        <link rel="prev" href="../SMX1-XAL-2/">
+      
+      
+        <link rel="next" href="../SMX1-XAL-4/">
+      
+      
+      <link rel="icon" href="../img/logojaume.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>UD3. Instal·lació física d'una xarxa (II). Dispositius de connexió. - Xarxes Area Local</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-GJ8MB56SLW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-GJ8MB56SLW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-GJ8MB56SLW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="UD3. Instal·lació física d'una xarxa (II). Dispositius de connexió. - Xarxes Area Local" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-3.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://jbonache.github.io/xal-smx/SMX1-XAL-3/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="UD3. Instal·lació física d'una xarxa (II). Dispositius de connexió. - Xarxes Area Local" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://jbonache.github.io/xal-smx/assets/images/social/SMX1-XAL-3.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ud3-installacio-fisica-duna-xarxa-ii-dispositius-de-connexio" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href=".." title="Xarxes Area Local" class="md-header__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xarxes Area Local
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD3. Instal·lació física d'una xarxa (II). Dispositius de connexió.
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode oscur"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode oscur" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mode clar"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clar" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Xarxes Area Local" class="md-nav__button md-logo" aria-label="Xarxes Area Local" data-md-component="logo">
+      
+  <img src="../img/logojaume.png" alt="logo">
+
+    </a>
+    Xarxes Area Local
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-PRG/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P. Didàctica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Unitat 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Unitat 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teoria UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-1-Act/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitats UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unitat 3
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 3
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#connectors-per-a-xarxes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connectors per a xarxes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connectors per a xarxes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connector-rj11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector RJ11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-rj45" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector RJ45
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-bnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector BNC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-db9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector DB9
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-db25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector DB25
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-st-fibra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector ST (Fibra)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-sc-fibra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector SC (Fibra)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-targeta-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      La targeta de xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La targeta de xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuracio-de-ladaptador-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuració de l'adaptador de xarxa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model TCP/IP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model TCP/IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protocol-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol IP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol TCP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ethernet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ethernet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#projecte-802" class="md-nav__link">
+    <span class="md-ellipsis">
+      Projecte 802
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projecte 802">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivell-llc-logic-link-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell LLC (Logic Link Control)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-mac-medium-acces-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell MAC (Medium Acces Control)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-fisic-ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell Físic Ethernet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprovacio-derrors-al-nivell-denllac-lcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprovació d'errors al nivell d'enllaç LCC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorisme-csmacd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorisme CSMA/CD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipus-dethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipus d'Ethernet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cablejat-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cablejat de xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cablejat de xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enrutament-del-cablejat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enrutament del cablejat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muntatge-de-cables-en-canaletes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Muntatge de cables en canaletes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suport-de-cablejat-horitzontal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suport de cablejat horitzontal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muntatge-darmaris-i-patch-pannels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Muntatge d'armaris i patch-pannels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#termes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organismes-i-normativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organismes i normativa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMX1-XAL-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#connectors-per-a-xarxes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connectors per a xarxes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connectors per a xarxes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connector-rj11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector RJ11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-rj45" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector RJ45
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-bnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector BNC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-db9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector DB9
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-db25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector DB25
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-st-fibra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector ST (Fibra)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-sc-fibra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connector SC (Fibra)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-targeta-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      La targeta de xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La targeta de xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuracio-de-ladaptador-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuració de l'adaptador de xarxa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model TCP/IP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model TCP/IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protocol-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol IP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol TCP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ethernet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ethernet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#projecte-802" class="md-nav__link">
+    <span class="md-ellipsis">
+      Projecte 802
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projecte 802">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivell-llc-logic-link-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell LLC (Logic Link Control)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-mac-medium-acces-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell MAC (Medium Acces Control)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivell-fisic-ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nivell Físic Ethernet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprovacio-derrors-al-nivell-denllac-lcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprovació d'errors al nivell d'enllaç LCC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorisme-csmacd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorisme CSMA/CD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipus-dethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipus d'Ethernet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cablejat-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cablejat de xarxa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cablejat de xarxa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enrutament-del-cablejat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enrutament del cablejat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muntatge-de-cables-en-canaletes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Muntatge de cables en canaletes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suport-de-cablejat-horitzontal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suport de cablejat horitzontal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muntatge-darmaris-i-patch-pannels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Muntatge d'armaris i patch-pannels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#termes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organismes-i-normativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organismes i normativa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ud3-installacio-fisica-duna-xarxa-ii-dispositius-de-connexio">UD3. Instal·lació física d'una xarxa (II). Dispositius de connexió</h1>
+<h2 id="connectors-per-a-xarxes">Connectors per a xarxes</h2>
+<p>La <strong>funció</strong> dels connectors és introduir el senyal de l'emissor al cable i adequar el senyal del cable a l'interfície del receptor.</p>
+<p>Freqüentment, els connectors d'una mateixa familia es dupliquen en forma de <strong><em>mascle i femella</em></strong>, que han d'acoplar-se mecànicament a la instal·lació.</p>
+<h3 id="connector-rj11">Connector RJ11</h3>
+<ul>
+<li>Emprat majorment per enllaçar xarxes de <strong>telefonia</strong>.</li>
+<li>Dimensions reduïdes i amb 2, 4 o 6 contactes.</li>
+<li>És el connector més difós globalment per a la connexió de dispositius telefònics convencionales, on es solen emprar generalment tan sols els dos pins centrals per a una linia simple.</li>
+</ul>
+<p><center><img alt="Connector RJ11 femella i mascle" src="../img/connectors/rj11.png" width="33%" /></center></p>
+<h3 id="connector-rj45">Connector RJ45</h3>
+<ul>
+<li>És el connector més emprat per connectar <strong>xarxes de cablejat estructurat</strong>. Sol emprar cables <strong>UTP</strong> o <strong>STP</strong>.</li>
+<li>Està format per <strong>8 pins</strong> als quals van connectats cadascun dels cables del parell trenat.</li>
+</ul>
+<p><center><img alt="Connector RJ45 mascle" src="../img/connectors/rj45m.jpg" width="33%" /></center></p>
+<h3 id="connector-bnc">Connector BNC</h3>
+<ul>
+<li>Emprat amb <strong>cables coaxials</strong> a les primeres <strong><em>ethernet</em></strong>, durant els anys 80.</li>
+<li>Consisteix en un connector de tipus mascle en cada extrem del cable. Aquest connector tenen un centre circular connectat al conductor del cable central i un tub metàlic connectat a la part exterior del cable. Un anell que rota a la part exterior assegura el cable mitjançant un mecanisme de bayoneta i permet la connexió a qualsevol connector BNC de tipus femella.</li>
+</ul>
+<p><center><img alt="Connector BNC mascle" src="../img/connectors/bnc_m.jpg" width="33%" /></center></p>
+<h3 id="connector-db9">Connector DB9</h3>
+<ul>
+<li>Originalment DE-9. S'empra princpipalment per <strong>connexions en serie</strong> perquè permet una <strong>transmissió asínrona de dades</strong> segons els que estableix la normativa <strong><em>RS-232</em></strong>.</li>
+<li>Actualment poc emprats, tan sols en alguns dispossitius específics.</li>
+</ul>
+<p><center><img alt="Connectors DB9" src="../img/connectors/db9.jpg" width="66%" /></center></p>
+<h3 id="connector-db25">Connector DB25</h3>
+<ul>
+<li>Connector analògic de <strong>25 pins</strong>.</li>
+<li>S'emprava molt per connectar impresores i per aquest motiu se li coneix com <strong>el port de la impresora (LTP)</strong>.</li>
+<li>S'empra per a connexions en serie i en paral·lel, per aquesta raó, generalment, els ports de serie tenen connectors mascles i els ports paral·lels, femella.</li>
+</ul>
+<p><center><img alt="Connector DB25 mascle" src="../img/connectors/db25.jpg" width="66%" /></center></p>
+<h3 id="connector-st-fibra">Connector ST (Fibra)</h3>
+<ul>
+<li>Ha sigut durant molt de temps el més emprat per finalitzar <strong>fibres òptiques multi-mode (FMM)</strong>, avui en dia està en desús, no obstant segueix present en moltes instal·lacions.</li>
+<li>Presenta un sistem d'anclatge per <strong><em>bayoneta</em></strong> que el converteix en un model molt <strong>resistent a les vibracions</strong> i el feia especialment indicat en entorns exigents.</li>
+</ul>
+<p><center><img alt="Connector ST" src="../img/connectors/fibraST.jpg" width="66%" /></center></p>
+<h3 id="connector-sc-fibra">Connector SC (Fibra)</h3>
+<ul>
+<li>S'empra habitualment en instal·lacions de fibra òptica. Sol gastar-se en <strong><em>Switchs Gigabit Ethernet</em></strong>.</li>
+<li>La connexió de la fibra al connector requereix d'un poliment de la fibra i la aliniació de la fibra amb el connector.</li>
+<li>Aquests connectors han anat substituint als connectors ST en cablejats estructurats, fonamentalment per ser <strong>més fàcils de connectar</strong>.</li>
+</ul>
+<p><center><img alt="Connectors SC" src="../img/connectors/fibraSC.jpg" width="66%" /></center></p>
+<h2 id="ferramentes">Ferramentes</h2>
+<p>La creació de les connexions de la xarxa ha de realitzar-se amb molta cura. La major part dels problemes de les xarxes d'àrea local estan relacionats amb problemes de cablejat o als connectors.</p>
+<p>Les ferramentes que gastarem, dependran del tipus de cable i connector utilitzat, però quan parlem de cablejat estructurat són molt comuns:</p>
+<ul>
+<li><strong>Grimpadora</strong></li>
+<li><strong>Alicates i ferramentes de tall</strong></li>
+<li><strong>Pela-cables</strong></li>
+<li><strong>Ferramentes d'impacte</strong></li>
+<li><strong>Comprovador de cables</strong></li>
+</ul>
+<p><center><img alt="Ferramentes habituals" src="../img/connectors/ferramentes.png" width="75%" /></center></p>
+<p>ALtres ferramentes útils son:</p>
+<ul>
+<li><strong>Brides</strong>: elements plàstics que amarren els cables entre sí als armaris o canaletes.</li>
+<li><strong>Etiquetes</strong>: sisteme d'informació que s'adjunta a cada cable per tal de tenir-lo identificat en tot moment. Es poden fer servir etiquetes clàssiques o generades amb una <strong>etiquetadora</strong>.</li>
+<li><strong>Macarrons termoretràctils</strong>: Cables buits contruits amb un material plàstic que s'arrupix quan se li aplica calor per tal de reforçar la unió del cable amb el connector.</li>
+</ul>
+<h2 id="la-targeta-de-xarxa">La targeta de xarxa</h2>
+<p>Es tracta d'un xicotet circuit imprés que, habitualment, es coloca en un slot d'expansió de la placa base de l'ordinador; existeixen externes en format USB. També es coneixen com <em>Adaptador de xarxa</em> o <em>NIC (Network Interface Computer</em>.)</p>
+<p>Treballa al <strong>nivell 2</strong> (enllaç) del model OSI.</p>
+<p><center><img alt="Targeta de xarxa Ethernet PCI" src="../img/nic/nicEthernet.png" width="66%" /></center></p>
+<p><center><img alt="Targete de xarxa sense fil USB" src="../img/nic/nicWifiUsb.jpg" width="66%" /></center></p>
+<p>Cada targeta de xarxa porta un nom codificat únic, denominat adreça de control d'accés al medi (<strong><em>MAC</em></strong>) i és únic en el mòn.</p>
+<p>Aquesta adreça és molt important degut a que identifica perfectament i de forma única a l'ordinador orige i destí.</p>
+<p>Factors a tenir en compte al moment de triar una targeta de xarxa:</p>
+<ul>
+<li><strong>Protocols</strong>:<ul>
+<li>Ethernet</li>
+<li>Token Ring</li>
+<li>FDDI</li>
+</ul>
+</li>
+<li><strong>Tipus de medi</strong>:<ul>
+<li>Cable de parell trenat (RJ45)</li>
+<li>Cable coaxial (BNC)</li>
+<li>Sense fil</li>
+<li>Fibra Òptica</li>
+</ul>
+</li>
+<li><strong>Connexions amb l'ordinador</strong>:<ul>
+<li>Bus PCI</li>
+<li>Bus PCI Express</li>
+<li>USB</li>
+</ul>
+</li>
+<li><strong>Velocitat màxima</strong>:<ul>
+<li>100 Mbps</li>
+<li>1000 Mbps</li>
+<li>10 Gbps</li>
+</ul>
+</li>
+</ul>
+<h3 id="configuracio-de-ladaptador-de-xarxa">Configuració de l'adaptador de xarxa</h3>
+<p>Cada Sistema Operatiu té una forma d'accedir als adaptadors de xarxa. Quan accedeixes a les seues propietats pots consultar l'adreça IP, la porta d'enllaç o els DNS.</p>
+<p>En sistemes <strong>Linux</strong>, es pot accedir a molta d'aquesta informació mitjançant el comandament <code>ip a</code> llançat en un terminal.</p>
+<p><center><img alt="ip a en Linux" src="../img/nic/ip%20a.png" width="100%" /></center></p>
+<p>Per altra banda, en sistemes <strong>Windows</strong>, aquesta informació està disponible mitjançant el comandament <code>ipconfig /all</code> del terminal de Windows (Símbol del sistema)</p>
+<h2 id="model-tcpip">Model TCP/IP</h2>
+<details class="question" open="open">
+<summary>Per què el model OSI no tingué èxit i el model TCP/IP sí?</summary>
+<ul>
+<li>El <strong>model OSI</strong> fou creat abans d'implementar la programació de cadascuna de les capes. Al portar-lo a la pràctica no tingué la repercusió que s'esperava perquè era un <strong>model molt complexe</strong>, amb capes de distinta "grossor" i algunes funcionalitats mal situades, per exemple, el xifrat.</li>
+<li>El <strong>model TCP/IP</strong> és un model <strong>més pràctic</strong>. Primerament es vàren dissenyar els protocols i a posteriori s'integraren per capes a l'arquitectura.</li>
+<li>El <strong>model TCP/IP</strong> és molt <strong>més simple</strong>, de fet redueix les capes de 7 a 4.</li>
+</ul>
+</details>
+<p>El model TCP/IP és l'arquitectura en la qual es basa Internet. És un model de 4 capes i reb el nom dels seus protocols majoritaris:</p>
+<ul>
+<li><strong><em>TCP (Tranmission Control Protocol)</em></strong>: treballa en el nivell 4 de OSI i per tant realitza tasques de <strong>transport</strong>.</li>
+<li><strong><em>IP (Internet Protocol)</em></strong>: treballa al nivell 3 del model OSI i per tant realitza tasques d'<strong>encaminament</strong>.</li>
+</ul>
+<p><center><img alt="Arquitectura ISO/OSI vs TCP/IP i protocols" src="../img/tcp-ip/arquitectura%20i%20protocols.jpg" width="66%" /></center></p>
+<p>Les capes del model TCP/IP són:</p>
+<ul>
+<li><strong>Subxarxa (Accés a la xarxa)</strong>: proporciona la tramissió de les dades independentment de la xarxa que estiga configurada. És la capa encarregada de convertir el senyal analògic/digital. També realitza el <strong><em>control de fluxe</em></strong> per evitar que els equips ràpids colapsen als més lents.</li>
+<li><strong>Interxarxa (Internet)</strong>: És la capa més important donat que és l'encarregada de transmetre <strong>datagrames</strong> emprant com adreçament l'<strong>adreça IP</strong>. Durant la tranmissió pot passar per distintes xarxes diferents i les dades poden arribar al destí desordenades.</li>
+<li><strong>Transport</strong>: S'encarrega d'establir una comunicació entre orige i destí. Introdueix el concepte de <strong>port</strong> per comunicar diverses aplicacions d'una mateixa màquina. S'encarrega de dividir els <strong>segments</strong> de dades que li arriben de la csps d'aplicació, <strong>ordenar les dades</strong> que li arriben de la capa inferior i controlar errors.</li>
+<li><strong>Aplicació</strong>: Conté les <strong>aplicacions de xarxa</strong> que empraran els serveis oferts per les capes inferiors per enviar <strong>dades</strong>.</li>
+</ul>
+<h3 id="protocol-ip">Protocol IP</h3>
+<ul>
+<li>El protocol IP realitza tasques bàsiques d'encaminament per conseguir transportar dades des d'un orige fins un destí.</li>
+<li>L'orige i el destí pot estar en xarxes amb tecnologies totalment diferents i pot hi haure diverses rutes possibles pel que haurà de pendre decisions i triar la millor.</li>
+<li>No hi ha seguretat a l'entrega.</li>
+<li>No hi ha control d'errors.</li>
+<li>Els paquets poden arribar desordenats.</li>
+<li>Els equips d'una xarxa tenen associat un número anomenat adreça IP (adreça lògica, no confondre amb el número MAC de l'adaptador de xarxa que és l'adreça física) que permet identificar-los en tot Internet. L'adreça IP està formada per 4 números separats per punts, cadascun dels quals pot pendre valors entre 0 i 255. Exemple: 192.168.0.1</li>
+<li>Màscara de xarxa: És un número similar a l'adreça IP i determina quina part de l'adreça IP pertany a l'equip i quina part pertany a la xarxa. S'utilitza per crear subxarxes. Exemple: 255.255.255.0</li>
+</ul>
+<h3 id="protocol-tcp">Protocol TCP</h3>
+<ul>
+<li>El TCP és un protocol per al control de la tranmissió de dades.</li>
+<li>Es va dissenyar per a realitzar connexions segures en xarxes insegures.</li>
+<li>Soluciona els problemes existents en IP:<ul>
+<li>Aporta control d'errors.</li>
+<li>Seguretat a l'entrega.</li>
+<li>Control de fluxe. Els paquets arriben ordenats.</li>
+</ul>
+</li>
+<li>Es complementa de manera perfecta amb IP per aportar una comunicació de dades fiables i ordenada. Per això, en ocassions, es fa referència a TCP/IP com si d'un protocol es tractara, però realment son dos.</li>
+<li>Els punts d'accés al servei (SAP en OSI) en la capa de transport s'anomenen <strong><em>sockets</em></strong>, ports o connectors TCP/IP. Darrere de cada <em>socket</em> s'implanta un servei de xarxa. Per exemple: 80 és el port que identifica les peticions de xarxa cap a un servidor web. Quan algú a la xarxa requereix un seervei, envia un missatge al <em>socket</em> o port que identifica eixe servei. Alguns serveis requereixen més d'un <em>socket</em> per al seu funcionament.</li>
+</ul>
+<h2 id="ethernet">Ethernet</h2>
+<p><strong>Ethernet</strong> és un estàndard de xarxes d'àrea local per a ordinadors. Es tracta d'un estàndard <em>de facte</em> perquè no ha sigut desenvolupat per ninguna organització, ha nascut a partir de productes de la indústria amb un gran èxit al mercat.</p>
+<p>El terme <em>Ethernet</em> ve de la unió de dues paraules: <em>Ether (Éter, matèria que uneix totes les coses)</em> i <em>net (xarxa)</em>. Per tant, en termes informàtics, <strong><em>Ethernet</em></strong> significa <strong>Xarxa que uneix tots els equips</strong>.</p>
+<p>Defineix les caraterístiques de cablejat i senyalització del nivell físic (OSI) i els formats de les <em>trames de dades</em> del nivell d'enllaç (OSI). Començà amb xarxes de velocitat de 10Mbps i actualment existeixen xarxes Ethernet a 10Gbps.</p>
+<h3 id="projecte-802">Projecte 802</h3>
+<ul>
+<li>Ethernet pertany al projecte <strong>IEEE 802</strong>. Aquest és un conjunt d'estàndards pertanyents a l'Institut d'Enginyers Elèctrics i Electrònics (IEEE), que actúa sobre xarxes d'ordinadors, concretament i segons la seua propia definició, sobre xarxes d'àrea local (LAN) i xarxes d'àrea metropolitana (MAN). Alguns dels quals són ben coneguts: Ethernet (IEEE 802.3) o Wi-Fi (IEEE 802.11).</li>
+<li>Es centra en definir els nivells més baixos  (segons el model de refència OSI), concretament subdivideix el segon nivell, el d'enllaç, en dos subnivells: enllaç lògic (802.2) i el d'accés al medi (MAC). La resta dels estàndards recullen tant el nivell físic (OSI), com el subnivell d'accés al medi (MAC).</li>
+</ul>
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Projecte</strong></th>
+<th style="text-align: center;"><strong>Descipció</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">IEEE 802.1</td>
+<td style="text-align: center;">Normalització interfície i relació amb el model OSI</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.2</td>
+<td style="text-align: center;">Control d'enllaç lògic (LLC)</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.3</td>
+<td style="text-align: center;">Mòduls MAC. CSMA/CD</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.4</td>
+<td style="text-align: center;">Bus amb pas de testic (Token bus)</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.5</td>
+<td style="text-align: center;">Anell amb pas de testic (Token ring)</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.6</td>
+<td style="text-align: center;">MAN</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.8</td>
+<td style="text-align: center;">FDDI (Fibra òptica)</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.9</td>
+<td style="text-align: center;">Veu i dades en LANs</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.10</td>
+<td style="text-align: center;">Seguretat</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.11</td>
+<td style="text-align: center;">Xarxes sense fil (WLAN)</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.15</td>
+<td style="text-align: center;">Bluetooth</td>
+</tr>
+<tr>
+<td style="text-align: center;">IEEE 802.16</td>
+<td style="text-align: center;">WiMAX</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p><center><img alt="Subnivells LLC i MAC" src="../img/ethernet/llc-mac.jpg" width="66%" /></center></p>
+<h4 id="nivell-llc-logic-link-control">Nivell LLC (Logic Link Control)</h4>
+<p>Nivell <strong>compartit per tots els protocols de la familia Ethernet</strong>. S'encarreha de:</p>
+<ul>
+<li>La lògica dels reenviaments</li>
+<li>Control de fluxe</li>
+<li>Comprovació d'errors</li>
+</ul>
+<h4 id="nivell-mac-medium-acces-control">Nivell MAC (Medium Acces Control)</h4>
+<ul>
+<li>S'encarrega del control d'<strong>accés al medi compartit</strong> (cables en bus, radio...).</li>
+<li>No s'utilitza en protocols punt a punt (no hi ha medi compartit).</li>
+<li>Adreça <strong>MAC</strong>: sistema d'adreçament de nivell 2 (enllaç).</li>
+<li><strong>Protocols MAC</strong> de nivell d'enllaç:<ul>
+<li>Token Ring | Token Bus</li>
+<li>CSMA/CD (emprat per Ethernet)</li>
+</ul>
+</li>
+</ul>
+<h4 id="nivell-fisic-ethernet">Nivell Físic Ethernet</h4>
+<ul>
+<li>Quan s'utilitza la <strong><em>norma 802.3 per a xarxes Ethernet</em></strong> s'utilitza com a sistema de transmissió digital (0's i 1's) la codificació <strong><em>Manchester</em></strong>.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">La codificació MANCHESTER</p>
+<ul>
+<li><strong>Avantatge</strong>: És una senyal molt <strong>robusta</strong>. Evita problemes típics d'altres sistemes de codificació (unipolar, NRZ, RZ).</li>
+<li><strong>Desavantatge</strong>: Consumeix el doble de temps (ample de banda) al tractar-se d'una comunicació <strong>bifàsica</strong>.</li>
+<li><strong>0 lògic</strong>: es representa mitjançant una <strong>baixada</strong> de senyal de +0.85V fins a -0.85V.</li>
+<li><strong>1 lògic</strong>: es representa mitjançant una <strong>pujada</strong> de senyal de -0.85V fins a +0.85V.</li>
+<li><strong>Canal inactiu</strong>: es representa mitjançant una senyal a 0V.</li>
+</ul>
+<p><center><img alt="Codificació Manchester" src="../img/ethernet/manchester.jpg" width="66%" /></center></p>
+</div>
+<h3 id="comprovacio-derrors-al-nivell-denllac-lcc">Comprovació d'errors al nivell d'enllaç LCC</h3>
+<p>Existeixen distints <strong>codis detectors</strong> d'errors per comprovar si una trama té bits erronis o no. Un dels més senzills és l'anomenat <strong><em>codi de paritat simple</em></strong>. Es basa en contar el nombre de 1's que té la cadena de bits a transmetre i afegir al final de la cadena un dígit més: un 0 (si té un nombre parell de 1's) o un 1 (si la cadena original té un nombre imparell de 1's).</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple de codi de paritat simple</p>
+<p>La cadena "11001" conté 3 1's, al ser un nombre imparell, la cadena final emprant codi de paritat simple seria "11001<strong>1</strong>".</p>
+</div>
+<p>Altres codis que existeixen, i que per la seua complexitat no anem a veure en aquest curs, són:</p>
+<ul>
+<li>Codi basat en la <strong><em>redundància cíclica (CRC)</em></strong></li>
+<li><strong><em>Codi de Hamming</em></strong></li>
+</ul>
+<h3 id="algorisme-csmacd">Algorisme CSMA/CD</h3>
+<ul>
+<li>
+<p><em>Carrier Sense (Sentit de Portadora):</em> Les estacions escolten el medi abans d'enviar dades per assegurar-se que està lliure.</p>
+</li>
+<li>
+<p><em>Multiple Access (Accés Múltiple):</em> Múltiples estacions tenen l'accés simultani al medi compartit, com un cable d'una xarxa local.</p>
+</li>
+<li>
+<p><em>Collision Detection (Detecció de Col·lisions):</em> Si dues estacions intenten transmetre alhora i es produeix una col·lisió, aquesta és detectada. Les estacions interrompen la transmissió, esperen un temps aleatori i tornen a intentar.</p>
+</li>
+</ul>
+<p>Aquest algorisme era utilitzat en les primeres implementacions de <strong>xarxes Ethernet amb topologia de bus</strong>, però ha disminuït amb l'ús de topologies més eficients com estrelles i commutadors (<em>switches</em>). Les xarxes modernes prefereixen protocols com <strong>CSMA/CA</strong> (<em>Carrier Sense Multiple Access with Collision Avoidance</em>) per una gestió més eficient dels recursos i la prevenció de col·lisions.</p>
+<pre class="mermaid"><code>graph LR
+    A[INICI] --&gt; B[Comprovar el medi];
+    B --&gt; C{Medi lliure?};
+    C --&gt; |No|B;
+    C --&gt; |Si|D[Envia dades];
+    D --&gt; E{Col.lisió?};
+    E --&gt; |No|F[FI];
+    E --&gt; |Si|G[Senyal JAM];
+    G --&gt; H{Queden intents?};
+    H --&gt; |No|F;
+    H --&gt; |Si|I[Backoff];
+    I --&gt; A;
+    F --&gt; |Següent trama|A</code></pre>
+<h3 id="tipus-dethernet">Tipus d'Ethernet</h3>
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Ethernet</strong></th>
+<th style="text-align: center;"><strong>Medi transmissió</strong></th>
+<th style="text-align: center;"><strong>Longitut màxima per segment</strong></th>
+<th style="text-align: center;"><strong>Característiques</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">10Base5</td>
+<td style="text-align: center;">Coaxial 50W</td>
+<td style="text-align: center;">500m</td>
+<td style="text-align: center;">Especificació original de Ethernet i utilitza coaxial gros</td>
+</tr>
+<tr>
+<td style="text-align: center;">10BaseTX</td>
+<td style="text-align: center;">UTP</td>
+<td style="text-align: center;">100m</td>
+<td style="text-align: center;">Empra cables de parell trenat UTP per a transmissions fins a 10Mbps</td>
+</tr>
+<tr>
+<td style="text-align: center;">1000BaseTX</td>
+<td style="text-align: center;">4 parells UTP</td>
+<td style="text-align: center;">100m</td>
+<td style="text-align: center;">Velocitats fins a 1000Mbps amb cablejat mínim de cat 5e</td>
+</tr>
+<tr>
+<td style="text-align: center;">1000BaseLX</td>
+<td style="text-align: center;">Fibra Òptica</td>
+<td style="text-align: center;">550m</td>
+<td style="text-align: center;">Velocitats de 1000Mbps però emprant la fibra com a medi de transmissió</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<div class="admonition info">
+<p class="admonition-title">Truc nemotècnic</p>
+<ul>
+<li>Normalment la <strong>primera part</strong> indentifica la <strong>velocitat</strong> de la xarxa:
+    10 = 10Mbps, 100 = 100Mbps, 1000 = 1000Mbps</li>
+<li>La <strong>segona part</strong> indica el <strong>tipus de senyal</strong> que es transmet: digital de banda base (BASE) o senyal modulada (BROAD).</li>
+<li>La <strong>tercera part</strong> pot ser un número o una lletra:<ul>
+<li>Si és un número indica la <strong>distància</strong> que permet:
+    5 = 500m, 2 = 200m</li>
+<li>Si és una lletra sol indicar el <strong>tipus del cable</strong>:
+    T = Parell trenat (Twisted)
+    F / SX / LX = Fibra òptica</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="cablejat-de-xarxa">Cablejat de xarxa</h2>
+<h3 id="enrutament-del-cablejat">Enrutament del cablejat</h3>
+<p>La forma més senzilla de posar el cablejat és <strong>posar-lo a la vista</strong>. Sols podrem emprar aquest mètode si estem segurs que el cablejat no serà colpejat ni estirat.</p>
+<p>Per montar cables sobre la paret necessitarem dispositius que puguen fixar-los:</p>
+<ul>
+<li>Brides de cables adhesives (si no hem de moure'ls mai).</li>
+<li>Brides de cables amb forats perforats (si hem de moure'ls alguna vegada).</li>
+<li><strong>MAI</strong> emprarem grapes! (TIA/EIA-568A)</li>
+</ul>
+<p><center><img alt="Fixació a paret" src="../img/cablejat/paret.png" width="66%" /></center></p>
+<h3 id="muntatge-de-cables-en-canaletes">Muntatge de cables en canaletes</h3>
+<p>Podem muntar els cables emprant diferents tipus de canaletes:</p>
+<ul>
+<li>Canal montat sobre la paret amb coberta mòvil:<ul>
+<li>Canaleta decorativa</li>
+<li>Millor acabament</li>
+<li>S'empra per col·locar el cable sobre una paret on quedaria visible.</li>
+</ul>
+</li>
+</ul>
+<p><center><img alt="Canaleta amb coberta" src="../img/cablejat/canaleta.jpg" width="50%" /></center></p>
+<ul>
+<li>Canal:<ul>
+<li>Alternativa menys atractiva</li>
+<li>Suficientment gran com per contindre diferents cables</li>
+<li>Emprada generalment en espais poc visibles</li>
+</ul>
+</li>
+</ul>
+<p><center><img alt="Canaleta" src="../img/cablejat/canaleta2.jpg" width="50%" /></center></p>
+<div class="admonition danger">
+<p class="admonition-title">Normes de seguretat personal en el muntatge de canaletes</p>
+<ol>
+<li>Desconectar de la llum tots els circuits que passen per el lloc de treball.</li>
+<li>Abans de treballar, tenir localitzats els extintors d'incendis.</li>
+<li>Emprar roba adequada.</li>
+<li>Si es treballa amb sostres falsos s'ha d'inspeccionar la zona.</li>
+<li>Si hem de tallar o serrar, cal protegir-nos els ulls amb ulleres de seguretat.</li>
+<li>Consultar al tècnic de manteniment si hi han materials perillosos.</li>
+<li>Mantenir la zona de treball ordenada i protegida.</li>
+</ol>
+</div>
+<h3 id="suport-de-cablejat-horitzontal">Suport de cablejat horitzontal</h3>
+<ul>
+<li>Molts instaladors extenen el cablejat per àtics o falsos sostres, així no queden a la vista.</li>
+<li>No s'han de col·locar els cables directament sobre els panells de sostre, hem d'emprar suports especials o bastiments.</li>
+</ul>
+<p><center><img alt="Cablejat a la vista en bandejes" src="../img/cablejat/bandejes.jpg" width="66%" /></center></p>
+<p><center><iframe width="560" height="315" src="https://www.youtube.com/embed/XPZDHKUzItU?si=ctvH0uM9DBiZTA1p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center></p>
+<h3 id="muntatge-darmaris-i-patch-pannels">Muntatge d'armaris i <em>patch-pannels</em></h3>
+<p>El panell de connexions o <em>patch pannel</em> és un dispositiu d'interconnexió que agrupa pins i ports i solen presentar la següent estructura:</p>
+<ul>
+<li>Part frontal: Ports de connexió RJ45 mascle.</li>
+<li>Part posterior: Fils i pins per a conexions RJ45 femella.</li>
+<li>Connexions elèctriques</li>
+</ul>
+<p><center><img alt="Patch pannel" src="../img/cablejat/patch-pannel.png" width="50%" /></center></p>
+<h3 id="personal">Personal</h3>
+<p>En instal·lacions de xarxes mitjanes o grans, podem trobar-nos amb diferents persones, cadascuna d'elles amb tasques distintes:</p>
+<ul>
+<li><strong>Gerent de projecte</strong>: s'encarrega d'escriure la documentació, supervisar el projecte, controlar el personal, les dates d'inici i acabament, certificacions, normatives de seguretat...</li>
+<li><strong>Gerent de materials</strong>: s'encarrega de les caixes de ferramentes, materials, cablejat, rosetes, switchs, routers... que facen falta per a la instal·lació. Tracta amb proveïdors i ajuda a gerent a establir calendaris d'execució de la instal·lació.</li>
+<li><strong>Planificador/Col·locador de cables</strong>: planifica per on passen els cables i els col·loca seguint la normativa vigent.</li>
+<li><strong>Acabador de cables</strong>: realitza les terminacions dels cables (rosetes, connexió) de les àrees de treball.</li>
+</ul>
+<h3 id="termes">Termes</h3>
+<p>Termes habituals que podem trobar-nos en instal·lacions de xarxa:</p>
+<ul>
+<li><strong>POP (point of presence), punt de presència</strong>: és el punt on arriben els serveis de telecomunicacions a l'edifici i on es connecten amb les instal·lacions de comunicacions a prop de l'edifici.</li>
+<li><strong>MDF (main distribution facility), centre de distribució principal</strong>: és el lloc de l'edifici on es concentra tota la infraestructura de cablejat i on es connecta amb la companyia telefònica que presta els serveis de veu, dades...</li>
+<li><strong>IDF (intermediate distribution facility), centro intermedio de distribución</strong>: en edificis de moltes plantes o molt extesos és convenientconcentrar previament parts del cablejat en centres més xicotets que es connectaran al <em>MDF</em> a través de <em>backbone</em> o cable principal.</li>
+<li><strong>WA (working area), àrea de treball</strong>: és on posem els equips, impressores, dispositius finals de l'usuari.</li>
+<li><strong>TR (telecomunications room), armari de telecomunicacions</strong>: son els armaris es situen a la planta i recullen el cablejat horitzontal.</li>
+<li><strong>Cablejat horitzontal</strong>: els cables que es tiren desde les àrees de treball fins l'armari de telecomunicacions situat a la mateixa planta.</li>
+<li><strong>Cablejat vertical (backbone)</strong>: cablejat que connecta entre sí els diferents armaris de telecomunicacions verticalment, entre les diferents plantes de l'edifici. Quan no hi ha armaris també s'asocia al cablejat que uneix distints dispositius de xarxa (<em>hub</em>, <em>switch</em>, <em>router</em>...).</li>
+</ul>
+<p><center><img alt="Esquema de xarxa" src="../img/cablejat/mdf-pop-idf.png" width="66%" /></center></p>
+<h3 id="organismes-i-normativa">Organismes i normativa</h3>
+<p>El cablejat estructurat està definit com un sèrie de normatives que tenen com objectiu <strong>contruir xarxes que treballen al màxim rendiment i que siguen fàcils de modificar o ampliar</strong>. Aquestes normatives no sols afecten al cablejat de xarxa, també al telefònic, CCTV...</p>
+<p>ALgunes de les organitzacions que creen els estàndards són:</p>
+<ul>
+<li><strong>ANSI</strong> (<em>American National Standards Institute</em>), és una organització encarregada de definir estàndards, particularment relacionats amb xarxes de telecomunicació.</li>
+<li><strong>EIA</strong> (<em>Electronic Industry Association</em>) desenvolupa normativa referent a equips electrònics, targetes de xarxa...</li>
+<li><strong>TIA</strong> (<em>Telecomunications Industry Association</em>) que ha creat entre d'altres les normes <strong>TIA 568A</strong> i <strong>TIA 568B</strong> que especifiquen com s'ha d'instal·lar el cablejat en edificis comercials. En particular, hi han algunes normatives TIA importants:<ul>
+<li>TIA/EIA 568B1: especifica requeriments generals.</li>
+<li>TIA/EIA 568B3: especifica requeriments de cablejat de parell trenat i fibra òptica.</li>
+<li>TIA/EIA 569A: especifica com fer passar el cablejat per l'edifici.</li>
+<li>TIA/EIA 570: normativa de telecomunicacions per a edificis residencials.</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna a l'inici
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Peu de pàgina" >
+        
+          
+          <a href="../SMX1-XAL-2/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Unitat 2">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Unitat 2
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../SMX1-XAL-4/" class="md-footer__link md-footer__link--next" aria-label="Següent: Unitat 4">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Següent
+              </span>
+              <div class="md-ellipsis">
+                Unitat 4
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Apunts XAL - 1SMX by JASB (origin from P. Galera) es troba sota llicència CC BY-NC-SA 4.0 - <a href="#__consent">Canvia la configuració de les cookies</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:ja.sanchezbonache@edu.gva.es" target="_blank" rel="noopener" title="Contacte" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+
+<h4>Consentiment de Cookies</h4>
+<p>Utilitzem cookies per reconèixer les vostres visites i preferències repetides, així com per mesurar l'eficàcia de la nostra documentació i si els usuaris troben el que estan cercant. Amb el vostre consentiment, ens esteu ajudant a millorar la nostra documentació.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accepta</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestiona la configuració</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.footer", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
