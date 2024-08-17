@@ -41,7 +41,7 @@ extra:
     title: Consentiment de Cookies
     description: Utilitzem cookies per reconèixer les vostres visites i preferències repetides, així com per mesurar l'eficàcia de la nostra documentació i si els usuaris troben el que estan cercant. Amb el vostre consentiment, ens esteu ajudant a millorar la nostra documentació.
 
-copyright: Apunts XAL - 1SMX (origin by P.Galera) es troba sota llicència CC BY-NC-SA 4.0 - <a href="#__consent">Canvia la configuració de les cookies</a>
+copyright: Apunts XAL - 1SMX by JASB (origin from P. Galera) es troba sota llicència CC BY-NC-SA 4.0 - <a href="#__consent">Canvia la configuració de les cookies</a>
 
 markdown_extensions:
   - admonition
@@ -79,7 +79,7 @@ plugins:
   - social
   - with-pdf:
       #author: WHO
-      copyright: Apunts XAL - 1SMX (origin by P.Galera) es troba sota llicència CC BY-NC-SA 4.0
+      copyright: Apunts XAL - 1SMX by JASB (origin from P.Galera) es troba sota llicència CC BY-NC-SA 4.0
       back_cover: true
       #cover_title: TITLE TEXT
       cover_subtitle: 1r SMX - IES Jaume II el Just - Tavernes de la Valldigna

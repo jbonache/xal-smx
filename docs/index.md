@@ -16,8 +16,8 @@ title: Informació del mòdul
 ## :material-bookshelf: Continguts
 
 1. Caracterització de xarxes locals
-2. Instal·lació física d'una xarxxa I
-3. Instal·lació física d'una xarxxa II
+2. Instal·lació física d'una xarxa I
+3. Instal·lació física d'una xarxa II
 4. Dispositius específics d'una xarxa local
 5. Instal·lació i configuració d'equips de xarxa
 6. Escenaris de xarxes
